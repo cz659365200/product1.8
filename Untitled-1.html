@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="js/jquery.1.10.2.min.js"></script>
+    <script type="text/javascript">
+        function del(_id) {
+            $("#testTable .tr_" + _id).html('');
+            var tableTr = $("#testTable .tr_" + _id).hide();
+        }
+
+        function addRow() {
+            var addRowTemplete = '<tr class="tr_' + tableCount + '"><td class="cl1">' + tableCount + '</td><td class="cl1">内容' + tableCount + '</td><td class="cl1"><a href="javascript:void(0)" onclick=del(' + tableCount + ');>删除</a></td></tr>';
+            $("#testTable tbody").append(addRowTemplete);
+        }
+
+        function addCol() {
+            $("#testTable tr").each(function() {
+                var trHtml = "<td onclick='delCol(" + colCount + ")'>曾加的td</td>";
+                $(this).append(trHtml);
+            });
+        }
+
+        function delCol(_id) {
+            $("#testTable tr").each(function() {
+                $("td:eq(" + _id + ")", this).hide();
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <table width="487" border="1" id="testTable">
+        <tr>
+            <td onclick="delCol(0)">序号</td>
+            <td onclick="delCol(1)">内容</td>
+            <td onclick="delCol(2)">操作</td>
+        </tr>
+    </table>
+    <p>
+        <input type="button" name="Submit" value="添加行" onclick="addRow()" />
+        <input type="button" name="Submit2" value="添加列" onclick="addCol()" />
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>评价页面</title>
+
+		<!-- Bootstrap -->
+		<link  href="css/bootstrap.min.css" rel="stylesheet">
+		<!--文件上传插件-->
+		<link rel="stylesheet" href="css/fileinput.min.css"  media="all" type="text/css">
+
+		<link rel="stylesheet" href="css/selectpick.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+		<div class="bg ">
+			<!-- 导航条 -->
+			<nav class="navbar navbar-default" style="min-height: 0;margin-bottom:0">
+				
+                <!-- 三条杠 -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+						
+					</div>
+					<!-- 导航下边 -->
+					
+				</div>
+			</nav>
+		</div>
+
+        <!-- 模态框（Modal）  -->
+		<div class="carousel">
+            <!--个人信息弹出框-->
+			<!-- 模态框（Modal）  -->
+			<div class="modal fade" id="myModal-message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog message">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+		                        <img src="img/title_img.png" alt="no" />
+		                    </button>
+							<h4 class="modal-title" id="">
+                                <img src="img/img-01.png" alt="">
+                                个人信息
+                            </h4>
+						</div>
+						<div class="modal-body">
+							<form action="">
+								<div class="xinxi">
+									<div class="head">
+										<div><img src="img/4.jpg" height="144" width="144" alt="no-img" /></div>
+										<a class="new-head" data-toggle="modal" data-target="#myModal-newhead">更新头像</a>
+									</div>
+									<div class="inputs">
+										<div>
+											<label for="">登录名</label>
+											<input type="text" disabled="true"/>
+										</div>
+										<div>
+											<label for="">部&nbsp;&nbsp;&nbsp;门</label>
+											<input type="text" disabled="true"/>
+										</div>
+										<div>
+											<label for="">姓&nbsp;&nbsp;&nbsp;名</label>
+											<input type="text" />
+										</div>
+										<div>
+											<label for="">座&nbsp;&nbsp;&nbsp;机</label>
+											<input type="text" />
+										</div>
+										<div>
+											<label for="">手&nbsp;&nbsp;&nbsp;机</label>
+											<input type="text" />
+										</div>
+										<div>
+											<label for="">邮&nbsp;&nbsp;&nbsp;箱</label>
+											<input type="text" />
+										</div>
+										<div class="xuan">
+											<label for="">工作状态</label>
+											<div class="checkbox gou">
+												<input type="radio" name="1" checked/>
+												<label for="">在线</label>
+											</div>
+											<div class="checkbox">
+												<input type="radio" name="1"/>
+												<label>离线</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+                            <button type="button" class="btn btn-primary">
+                               保存
+                            </button>
+							<button type="button" class="btn btn-info" data-dismiss="modal">取消
+                            </button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal -->
+			</div>
+
+            <!--修改密码弹出框-->
+            <!-- 模态框（Modal） -->
+            <div class="modal fade" id="myModal-password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog password">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/img-02.png" alt="no">
+                                修改密码
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="password-input">
+                                    <div>
+                                        <label for="">请输入新密码：</label>
+                                        <input type="text" />
+                                    </div>
+                                    <div>
+                                        <label for="">请再次输入新密码：</label>
+                                        <input type="text" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">
+                                保存
+                            </button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">取消
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal -->
+            </div>
+
+         <!--首页选择弹出框-->
+            <!-- 模态框（Modal） -->
+            <div class="modal fade" id="myModal-home" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog homeSelect">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/icon-09.png" alt="no">
+                               首页选择
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="homeSelect-check">
+                                    <div class="checkbox gou">
+                                        <input type="radio" name="2" checked/>
+                                        <a href="second.html">管理者主页</a>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="radio" name="2"/>
+                                        <a href="putong.html">普通用户主页</a>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="radio" name="2" />
+                                        <a href="index.html">工程师主页</a>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">
+                                设为默认
+                            </button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">取&nbsp;&nbsp;&nbsp;消
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal -->
+            </div>
+
+            <!--更新头像弹出框-->
+            <!-- 模态框（Modal） 
+            <div class="modal fade" id="myModal-newhead" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog headUp">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/img-01.png" alt="no">
+                                上传头像
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+							<div class="input-group-btn">
+								<input id="inputUp" name="txt_file" type="file" multiple class="file" data-show-preview="false" >
+							</div>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">
+                                    上传
+                                </button>
+                            </div>
+                   </div>
+                  <!-- /.modal-content -->
+                
+                <!-- /.modal 
+            </div>--> 
+			</div>
+			<!--更新头像弹出框-->
+            <!-- 模态框（Modal） -->
+            <div  class="mynewhead" id="mynewhead"  role="dialog" aria-labelledby="myModalLabel" >
+                <div style="z-index: 1051 !important" class="modal-dialog headUp">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close close1" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/img-01.png" alt="no">
+                                上传头像
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+							<div class="input-group-btn">
+								<input id="inputUp" name="txt_file" type="file" multiple class="file" data-show-preview="false" >
+							</div>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">
+                                    上传
+                                </button>
+                            </div>
+                   </div>
+                  <!-- /.modal-content -->
+                </div>
+               
+            </div>
+
+			<!--上传附件弹出框-->
+           <!--  模态框（Modal）  -->
+            <div class="modal fade" id="myModal-newfile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog newfile">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/img-01.png" alt="no">
+                                上传附件
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+							<div class="input-group-btn">
+								<input id="inputUp3" name="txt_file" type="file" multiple class="file" data-show-preview="false" >
+							</div>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">
+                                    上传
+                                </button>
+                            </div>
+                   </div>
+                  <!-- /.modal-content -->
+                
+                <!-- /.modal -->
+            </div>
+
+	</div>
+
+
+		<!--<div >-->
+		<div class="server-menu ">
+			<div class="">
+				<div class="menu-btn active" >
+					<img src="img/rb-01.png" alt="no-img">
+					<span>草&nbsp&nbsp&nbsp&nbsp稿</span>
+				</div>
+				<div class="menu-line hidden-sm hidden-xs active" ></div>
+				<div class="menu-btn " >
+					<img src="img/rb-02.png" alt="no-img">
+					<span>请求处理</span>
+				</div>
+				<div class="menu-line hidden-sm hidden-xs" ></div>
+				<div class="menu-btn " >
+					<img src="img/rb-03.png" alt="no-img">
+					<span>确认评价</span>
+				</div>
+				<div class="menu-line hidden-sm hidden-xs" ></div>
+				<div class="menu-btn " >
+					<img src="img/rb-04.png" alt="no-img">
+					<span>关&nbsp&nbsp&nbsp&nbsp闭</span>
+				</div>
+			</div>
+
+		</div>
+		<div class="main" style="position:static ">
+             <div class="request">
+				 <div class="request-title">
+					 <img src="img/line-left.png" alt="no">
+					 <h3>请求内容</h3>
+					 <img src="img/line-right.png" alt="no">
+				 </div>
+				 <form action="">
+					 <div class="request-content row">
+						 <div class="r-con-left col-lg-5 col-md-5 col-sm-6 col-xs-12">
+							 <div class="list left-list-01">
+								 <div class="list-title title-01">
+									 <img src="img/r-01.png" alt="no">
+									 <h4>基本信息</h4>
+									 <img src="img/square-01.png" height="21" width="14" alt="" />
+								 </div>
+								 <div class="form">
+									 <div>
+										 <label for="">服务目录</label>
+										 <input type="text" disabled="disabled" class="form-control">
+									 </div>
+									 <div>
+										 <label for="">请求编号</label>
+										 <input type="text" disabled="disabled" class="form-control">
+									 </div>
+									 <div>
+										 <label for="">请&nbsp;&nbsp;求&nbsp;人</label>
+										 <div class="input-group">
+											 <input type="text" class="form-control" disabled="disabled">
+											 <span class="input-group-btn">
+												 <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#myModal-perchoice">选择</a>
+												 <a class="btn btn-info" href="#" data-toggle="modal" data-target="#myModal-persondiy">自定义</a>
+											 </span>
+										 </div>
+									 </div>
+									 <div>
+										 <label for="">所在部门</label>
+										 <input type="text" disabled="disabled" class="form-control">
+									 </div>
+									 <div>
+										 <label for="">所在位置</label>
+										 <input type="text" class="form-control" maxlength="25">
+									 </div>
+									 <div>
+										 <label for="">固定电话</label>
+										 <input type="text" class="form-control" maxlength="15">
+									 </div>
+									 <div>
+										 <label for="">手&nbsp;&nbsp;机&nbsp;号</label>
+										 <input type="text" class="form-control" maxlength="11">
+									 </div>
+									 <div>
+										 <label for="">填&nbsp;&nbsp;单&nbsp;人</label>
+										 <input type="text" disabled="disabled" class="form-control">
+									 </div>
+
+								 </div>
+								 <!--执行按钮弹框-->
+								 <!-- 模态框（Modal） -->
+								 <div class="modal fade" id="myModal-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									 <div class="modal-dialog zhixing">
+										 <div class="modal-content">
+											 <div class="modal-header">
+												 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+													 <img src="img/title_img.png" alt="no" />
+												 </button>
+												 <h4 class="modal-title" id="">
+													 工单执行
+												 </h4>
+											 </div>
+											 <div class="modal-body">
+												 <div>
+													 <label for="">工单内容：</label>
+														<textarea name="" id="" rows="10" cols="33" disabled="disabled">
+	                                                </textarea>
+												 </div>
+												 <div>
+													 <label for="">派单人：</label>
+														<textarea name="" id="" rows="1" cols="33" disabled="disabled">
+	                                                </textarea>
+												 </div>
+												 <div>
+													 <label for="">要求解决时间：</label>
+														<textarea name="" id="" rows="1" cols="33" disabled="disabled">
+	                                                </textarea>
+												 </div>
+
+											 </div>
+											 <div class="modal-footer">
+												 <button type="button" class="btn btn-primary">
+													 执行
+												 </button>
+												 <button type="button" class="btn btn-info">转派
+												 </button>
+											 </div>
+										 </div>
+										 <!-- /.modal-content -->
+									 </div>
+									 <!-- /.modal -->
+								 </div>
+								
+								
+
+							 </div>
+						 </div>
+						 <div class="r-con-right col-lg-7 col-md-7 col-sm-6 col-xs-12">
+							 <div class="list left-list-03">
+								 <div class="list-title title-03">
+									 <img src="img/r-02.png" alt="">
+									 <h4>详细信息</h4>
+									 <img src="img/square-03.png" height="27" width="14" alt="" />
+								 </div>
+								 <div class="form" style="padding-bottom:5px" action="">
+									 <div>
+										 <label for="">单行文本框</label>
+										 <input type="text" class="form-control" placeholder="请输入&hellip;">
+									 </div>
+									 <div>
+										 <label for="">下&nbsp;拉&nbsp;框</label>
+										 <div class="sel-box">
+											 <select name="" id="sel">
+												 <option value="1">汉族</option>
+												 <option value="2">黎族</option>
+												 <option value="3">藏族</option>
+												 <option value="4">回族</option>
+											 </select>
+										 </div>
+									 </div>
+									
+									 <div>
+										 <label for="">复&nbsp;选&nbsp;框</label>
+										 <ul class="r-check">
+											 <li class="">
+												 <input type="checkbox">
+												 <label for="">养猫</label>
+											 </li>
+											 <li>
+												 <input type="checkbox">
+												 <label for="">养猫</label>
+											 </li>
+											 <li>
+												 <input type="checkbox">
+												 <label for="">养猫</label>
+											 </li>
+											 <li>
+												 <input type="checkbox">
+												 <label for="">养猫</label>
+											 </li>
+										 </ul>
+									 </div>
+									
+									 <div class="data_sjc input-append date form_datetime">
+										 <label for="">时&nbsp;间&nbsp;戳</label>
+										  <div id="datetimepicker" class="input-group date form_datetime data_sjc_box" >
+						                    <input  class="form-control" size="16" type="text" value="" >
+											<span class="input-group-addon" ><span class="glyphicon glyphicon-th"></span></span>
+						                </div>
+									 </div>
+									 <div class="text-area">
+										 <label for="">文&nbsp;本&nbsp;域</label>
+										 <textarea placeholder="请输入&hellip;"></textarea>
+									 </div>
+									 <div class="file-up">
+									 	 <div class="line1">
+										 <span>附件列表</span>
+										 <a  data-toggle="modal" data-target="#myModal-newfile" href="#">添&nbsp;&nbsp;加</a>
+										 <div style="clear: both"></div>
+										 </div>
+										 <div class="line2">
+											 <span>附件信息</span>
+											 <div class="text-box">
+												 <div>
+													 <p>20170511.jpg</p>
+													 <a  href="#">删&nbsp;&nbsp;除</a>
+													 <a  href="#">下&nbsp;&nbsp;载</a>
+												 </div>	
+												
+											 </div>
+											 <div style="clear: both"></div>
+										 </div>
+										
+									 </div>
+
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </form>
+				 <!-- 服务追踪 -->
+				 <div>
+					 <div class="request-title">
+						 <img src="img/line-left.png" alt="no">
+						 <h3>服务跟踪</h3>
+						 <img src="img/line-right.png" alt="no">
+					 </div>
+					 <div class="request-serve">
+						<div class="title">
+							<h4 class="serve-node">节点</h4>
+							<h4 class="serve-date">时间</h4>
+							<h4 class="serve-operator">操作人</h4>
+							<h4 class="serve-message">消息内容</h4>
+						</div>
+						<div class="content_text">
+							<p class="serve-node"><span class=" first_node">1</span></p>
+							<p class="serve-date">2017-04-09  15:30</p>
+							<p class="serve-operator">赵东来</p>
+							<p class="serve-message">请求已提交,事件负责人:李达康请求已提交,事件负责人:李达康:李达康</p>
+						</div>
+						<div class="content_text">
+							<p class="serve-node"><span>2</span></p>
+							<p class="serve-date">2017-04-09  15:30</p>
+							<p class="serve-operator">赵东来</p>
+							<p class="serve-message">请求已提交,事件负责人:李达康</p>
+						</div>
+						<div class="content_text">
+							<p class="serve-node"><span>3</span></p>
+							<p class="serve-date">2017-04-09  15:30</p>
+							<p class="serve-operator">赵东来</p>
+							<p class="serve-message">请求已提交,事件负责人:李达康</p>
+						</div>
+						<div class="content_text">
+							<p class="serve-node"><span class="last_node">4</span></p>
+							<p class="serve-date">2017-04-09  15:30</p>
+							<p class="serve-operator">赵东来</p>
+							<p class="serve-message">请求已提交,事件负责人:李达康</p>
+						</div>
+
+					 </div>
+				</div>
+				<!-- 评价反馈 -->
+				<div>
+					 <div class="request-title">
+						 <img src="img/line-left.png" alt="no">
+						 <h3>评价反馈</h3>
+						 <img src="img/line-right.png" alt="no">
+					 </div>
+					 <div class="request-fk">
+						<div>
+							<label>服务评价</label>
+	                                <i class="active"></i>
+	                                <i class="active"></i>
+	                                <i class="active"></i>
+	                                <i></i>
+	                                <i></i>
+						</div>
+						<div>	
+							<label>评&nbsp价&nbsp人</label>
+							<input type="text" disabled>
+						</div>
+					 </div>
+				</div>
+				<!-- 意见与建议 -->
+				<div class="request-advice">
+					<div class="list left-list-01">
+						 <div class="list-title title-01">
+							 <img src="img/r-01.png" alt="no">
+							 <h4>意见与建议</h4>
+							 <img src="img/square-01.png" height="21" width="14" alt="" />
+						 </div>
+						 <form action="">
+						 	<textarea name="" id="" cols="30" rows="10"></textarea>
+						 </form>
+					</div>
+				</div>
+				<div class="request-btn_box">
+					<button>提交评价</button>
+					<button>取&nbsp&nbsp&nbsp消</button>
+				</div>
+			 </div>
+			 <!-- 请求内容部分弹窗 -->
+			 <div>
+				 <!--请求人选择按钮弹框-->
+				 <!-- 模态框（Modal） -->
+				 <div class="modal fade" id="myModal-perchoice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+					 <div class="modal-dialog perchoice">
+						 <div class="modal-content">
+							 <div class="modal-header">
+								 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+									 <img src="img/title_img.png" alt="no" />
+								 </button>
+								 <h4 class="modal-title" id="">
+									 请求人选择
+								 </h4>
+							 </div>
+							 <div class="modal-body">
+							 	<form  style="margin:0 ;padding:0">
+									<div class="perchoice_left">
+										<h3>组织结构</h3>
+										<div class="zz_box"></div>
+									</div>
+									<div class="perchoice_right">	
+										<div class="perchoice_right_search">
+											<h3>搜&nbsp&nbsp索</h3>
+											<input type="text" placeholder="姓名、部门、电话、手机" />
+											<button></button>
+										</div>
+										<div style="clear:both"></div>
+										<div class="perchoice_right_tb">
+											<table>
+													<thead>
+														<th>姓名</th>
+														<th>部门</th>
+														<th>电话</th>
+														<th>手机</th>
+														<th></th>
+													</thead>
+													<tbody>
+														<tr>
+															<td>赵恒平</td>
+															<td>中信信息/智慧政务/软件二部</td>
+															<td>9729</td>
+															<td>13219019010</td>
+															<td>
+																<ul class="r-check">
+																	<li><input type="checkbox" name="1" />
+																	<label ></label></li>
+																</ul>
+															</td>
+														</tr>
+														<tr>
+															<td>严敏</td>
+															<td>中信信息/智慧政务/软件二部</td>
+															<td>9729</td>
+															<td>13219019010</td>
+															<td>
+																<ul class="r-check">
+																	<li><input type="checkbox" name="1" />
+																	<label ></label></li>
+																</ul>
+															</td>
+														</tr>
+														<tr>
+															<td>李仡</td>
+															<td>中信信息/智慧政务/产品研发部</td>
+															<td>9729</td>
+															<td>13219019010</td>
+															<td>
+																<ul class="r-check">
+																	<li><input type="checkbox" name="1" />
+																	<label ></label></li>
+																</ul>
+															</td>
+														</tr>
+														<tr>
+															<td>徐璐</td>
+															<td>中信信息/智慧政务/产品研发部</td>
+															<td>9729</td>
+															<td>13219019010</td>
+															<td>
+																<ul class="r-check">
+																	<li><input type="checkbox" name="1" />
+																	<label ></label></li>
+																</ul>
+															</td>
+														</tr>
+														<tr>
+															<td>滕树宝</td>
+															<td>中信信息/智慧政务/产品研发部</td>
+															<td>9729</td>
+															<td>13219019010</td>
+															<td>
+																<ul class="r-check">
+																	<li><input type="checkbox" name="1" />
+																	<label ></label></li>
+																</ul>
+															</td>
+														</tr>
+														<tr>
+															<td>赵恒平</td>
+															<td>中信信息/智慧政务/软件二部</td>
+															<td>9729</td>
+															<td>13219019010</td>
+															<td>
+																<ul class="r-check">
+																	<li><input type="checkbox" name="1" />
+																	<label ></label></li>
+																</ul>
+															</td>
+														</tr>
+													</tbody>
+
+											</table>
+											<div class="fenpage">
+												<a class="before" href="#"><</a>
+												<ul>
+													<li><a class="active" href="#">1</a></li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#">4</a></li>
+													<li><a href="#">5</a></li>
+													<li><a href="#">6</a></li>
+												</ul>
+												<a href="#" class="next">></a>
+
+											</div>
+										</div>
+									</div>
+								</form>
+							 </div>
+							 <div class="modal-footer">
+								 <button type="button" class="btn btn-primary">
+									 确定
+								 </button>
+								 <button type="button" class="btn btn-info" data-dismiss="modal">取消
+								 </button>
+							 </div>
+						 </div>
+						 <!-- /.modal-content -->
+					 </div>
+					 <!-- /.modal -->
+				 </div>
+				
+				 <!--请求人自定义按钮弹框-->
+				 <!-- 模态框（Modal） -->
+				 <div class="modal fade" id="myModal-persondiy" role="dialog" aria-labelledby="myModalLabel" >
+					 <div class="modal-dialog perdiy">
+						 <div class="modal-content">
+							 <div class="modal-header">
+								 <button type="button" class="close" data-dismiss="modal" >
+									 <img src="img/title_img.png" alt="no" />
+								 </button>
+								 <h4 class="modal-title" id="">
+									 请求人自定义
+								 </h4>
+							 </div>
+							 <div class="modal-body">
+							 	<form action="" style="margin:0 ;padding:0">
+									<div>
+	                                    <label for="">部门选择<span style="color:#e81111">*</span></label>
+	                                    <input style="width: 203px;border-right: none;height: 34px;" type="text" disabled="disabled">
+	                                    <a id="bmxz" data-toggle="modal" ></a>
+									</div>
+									<div>
+	                                    <label for="">用户姓名<span style="color:#e81111">*</span></label>
+	                                    <input type="text">
+									</div>
+									<div>
+	                                    <label for="">用户电话</label>
+	                                    <input type="text">
+									</div>
+									<div>
+	                                    <label for="">用户手机</label>
+	                                    <input type="text">
+									</div>
+									<div>
+	                                    <label for="">用户位置</label>
+	                                    <input type="text">
+									</div>
+								</form>
+							 </div>
+							 <div class="modal-footer">
+								 <button type="button" class="btn btn-primary">
+									 确定
+								 </button>
+								 <button type="button" class="btn btn-info" data-dismiss="modal">取消
+								 </button>
+							 </div>
+						 </div>
+						 <!-- /.modal-content -->
+					 </div>
+					 <!-- /.modal -->
+				 </div>
+
+				 <!--部门选择弹框-->
+				 <!-- 模态框（Modal） -->
+				 <div  class="personsec" id="myModal-personsection"  role="dialog" aria-hidden="true">
+					 <div style="z-index: 1052 !important"  class="modal-dialog personsection">
+						 <div  class="modal-content">
+							 <div class="modal-header">
+								 <button type="button" class="close close1" data-dismiss="modal" >
+									 <img src="img/title_img.png" alt="no" />
+								 </button>
+								 <h4 class="modal-title" id="">
+									 部门选择
+								 </h4>
+							 </div>
+							 <div class="modal-body">
+							 	<form action="" style="margin:0 ;padding:0">
+									<div class="personsection_search">
+										<h3>搜&nbsp&nbsp索</h3>
+										<input type="text" placeholder="部门名称" />
+										<button></button>
+									</div>
+									<div style="clear:both"></div>
+									<div class="zzjg"></div>
+								</form>
+							 </div>
+							 <div class="modal-footer">
+								 <button type="button" class="btn btn-primary">
+									 确定
+								 </button>
+								 <button type="button" class="btn btn-info close1" data-dismiss="modal">取消
+								 </button>
+							 </div>
+						 </div>
+						 <!-- /.modal-content -->
+					 </div>
+					 <!-- /.modal -->
+				 </div>
+			 </div>
+			 <!-- 请求内容部分弹窗 -->
+		</div>
+
+		<div class="shadow"></div>
+		<!--</div>    -->
+		<script src="js/jquery.1.10.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.spinner.min.js"></script>
+		<script src="js/fileinput.js"></script>
+		<script src="js/selectpick.js"></script>
+		<script src="js/respond.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.navbar-toggle').click(function() {
+						$('.navbar-nav').toggle(200);
+					})
+
+                // body...
+
+				$('.modal-content').draggable();//使弹窗可移动
+                $('.spinner').spinner();
+
+
+				$('.xuan .checkbox>input').click(function () {
+					$(this).parents('.checkbox').addClass('gou').siblings().removeClass('gou');
+				});
+				$('.homeSelect-check .checkbox>input').click(function () {
+					$(this).parents('.checkbox').addClass('gou').siblings().removeClass('gou');
+				});
+
+//				select选择框
+				$("#sel").selectpick({container:'.sel-box',onSelect:function(value,text){
+					// enAble();
+				    }
+				});
+				$("#sel1").selectpick({container:'.sel-box1',onSelect:function(value,text){
+					// enAble();
+				    }
+				});
+
+//				详细信息的复选框
+				$('.r-check li input').click(function () {
+					if ($(this).parents('li').hasClass('gou-active')){
+						$(this).parents('li').removeClass('gou-active');
+					}else{
+						$(this).parents('li').addClass('gou-active');
+					}
+				})
+			 	 	$('#datetimepicker').datetimepicker({
+			 	 		language:  'zh-CN',
+			 	 		weekStart: 1,
+				        todayBtn:  1,
+						autoclose: 1,
+						todayHighlight: 1,
+						startView: 2,
+						forceParse: 0,
+				        showMeridian: 1,
+				        pickerPosition: "bottom-left"
+					});
+			});
+//			取消文件上传插件的Upload按钮
+			$("#inputUp").fileinput({
+				showUpload:false
+			});
+			$("#inputUp2").fileinput({
+				showUpload:false
+			});
+			$("#inputUp3").fileinput({
+				showUpload:false
+			});
+			// 个人信息弹出框JS
+			$(".new-head").click(function(){
+					$(".shadow").fadeIn(300);
+					$("#mynewhead").fadeIn(300);
+			});
+			$(".close1").click(function(){
+					$(".shadow").fadeOut(300);
+					$("#mynewhead").fadeOut(300);
+			});
+			// 结束
+			// // 部门选择弹出框JS
+			$("#bmxz").click(function(){
+					$(".shadow").fadeIn(300);
+					$("#myModal-personsection").fadeIn(300);
+			});
+			$(".close1").click(function(){
+					$(".shadow").fadeOut(300);
+					$("#myModal-personsection").fadeOut(300);
+			});
+			// 结束
+		</script>
+	</body>
+
+</html>

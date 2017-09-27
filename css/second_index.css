@@ -1,0 +1,196 @@
+
+ul,li{margin:0;padding:0;}
+h1, h2, h3{margin:0;padding:0;}
+/*二级首页页面主体部分*/
+
+.second_main_index{
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.second_main_index>div{
+    margin:0 10px;
+    overflow: hidden;
+}
+.second_main_index>div.cont>div{
+    float: left;
+    width: 50%;
+}
+.second_main_index>div.cont>div>div{
+    margin:15px 10px;
+    border:1px solid #aad5eb;
+}
+.cont>div>div div.title{
+    overflow: hidden;
+    background: #0082bd;
+    height: 40px;
+}
+.cont>div>div div.title h3{
+    font-size:18px;
+    color:#ffffff;
+    margin:10px 0 0 40px;
+    float: left;
+    font-weight: bold;
+}
+.cont>div>div div.title a{
+     font-size:14px;
+    color:#ffffff;
+    margin:10px 25px 0 0;
+    float: right;
+    font-weight: bold;
+}
+.cont>div>div div.content_box{
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    background: #ffffff;
+}
+.cont>div>div div.content_box table{
+    width: 100%;
+    height: auto;
+    border-bottom:1px solid #999999;
+}
+.cont>div>div div.content_box table tr{
+    height: 35px;
+    line-height: 35px;
+}
+.cont>div>div div.content_box table thead tr{
+    background: #dff8fe;
+}
+.cont>div>div div.content_box table thead tr th{
+    color:#006bae;
+    font-size:12px;
+    font-weight: bold;
+    text-align: center;
+}
+.cont>div>div div.content_box table tbody tr{
+    background: #ffffff;
+}
+.cont>div>div div.content_box table tbody tr:nth-child(even){
+    background: #dff8fe;
+}
+.cont>div>div div.content_box table tbody tr td{
+    color:#333333;
+    font-size:12px;
+    text-align: center;
+}
+
+
+/*分页*/
+.cont>div>div div.content_box div.page{
+    overflow: hidden;
+    margin:13px 0 0 13px;
+    float: left;
+}
+.cont>div>div div.content_box div.page>a{
+    width: 50px;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+    display: block;
+    text-align: center;
+    color:#ffffff;
+    font-size: 12px;
+    border:1px solid #999999;
+    background: #006bae;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.cont>div>div div.content_box div.page>a.hs{
+    background: #ffffff;
+     color:#999999;
+}
+.cont>div>div div.content_box div.page ul{
+    float: left;
+    overflow: hidden;
+    margin:0 10px;
+}
+.cont>div>div div.content_box div.page ul li{
+    float: left;
+
+}
+
+.cont>div>div div.content_box div.page ul li a{
+    width: 24px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    display: block;
+    color:#006bae;
+    font-size: 12px;
+    border:1px solid #999999;
+    margin:0 3px;
+}
+.cont>div>div div.content_box div.page ul li.cur a{
+    border:none;
+}
+.cont>div>div div.content_box div.feny{
+    float: right;
+    overflow: hidden;
+    margin:10px 25px 0 0;
+}
+.cont>div>div div.content_box div.feny label{
+     display: block;
+    color:#333333;
+    font-size: 12px;
+    float: left;
+    margin:0 3px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: normal;
+}
+.cont>div>div div.content_box div.feny select{
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border:1px solid #999999;
+}
+.cont>div>div div.content_box div.feny select option{
+   color:#333333;
+    font-size: 12px;
+}
+
+
+.cont>div>div div.content_box div.ry_line{
+    width:80%;
+    overflow: hidden;
+    margin-left: 40px;
+}
+.cont>div>div div.content_box div.ry_line>div{
+    float: left;
+    overflow: hidden;
+}
+.cont>div>div div.content_box div.ry_line>div label{
+    display: block;
+    float: left;
+    margin:35px 5px 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#006bae;
+}
+.cont>div>div div.content_box div.ry_line>div img{
+    float: left;
+    display: block;
+    margin:39px 5px 0 5px;
+}
+.cont>div>div div.content_box div.ry_line ul{
+    float: left;
+    overflow: hidden;
+    margin-left:10px;
+    width: 80%;
+}
+.cont>div>div div.content_box div.ry_line ul li{
+    float: left;
+    margin:15px;
+}
+.cont>div>div div.content_box div.ry_line ul li img{
+    display: block;
+    margin-bottom: 5px;
+}
+.cont>div>div div.content_box div.ry_line ul li span{
+    font-size: 12px;
+    font-weight: bold;
+    color:#006bae;
+}

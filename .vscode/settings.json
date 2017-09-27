@@ -1,0 +1,18 @@
+{
+    "git.ignoreLimitWarning": true,
+    "background.useDefault": false,
+    "background.customImages": [
+        "file:///E:/FE11.png"
+    ],
+    "background.style": {
+        "content": "''",
+        "pointer-events": "none",
+        "position": "absolute",
+        "z-index": "99999",
+        "width": "100%",
+        "height": "100%",
+        "background-position": "100% 100%",
+        "background-repeat": "no-repeat",
+        "opacity": 0.2
+    }
+}

@@ -1,0 +1,431 @@
+.overdate {
+    color: #f1624d !important;
+}
+
+
+/* 弹窗样式 */
+
+.tjfl-input>div {
+    margin-bottom: 15px;
+    height: 30px;
+}
+
+.tjfl-input {
+    padding: 15px 30px;
+}
+
+.tjfl-input>div>label {
+    width: 90px;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 36px;
+    margin-bottom: 0;
+    float: left;
+}
+
+.tjfl-input>div>input {
+    width: 300px;
+    height: 35px;
+    border: 1px solid #99d9f3;
+    font-size: 14px;
+    text-indent: 10px;
+    float: left;
+}
+
+.tjfl-input>div textarea {
+    width: 300px;
+    border: 1px solid #99d9f3;
+    height: 130px;
+    resize: none;
+    font-size: 14px;
+    text-indent: 10px;
+}
+
+.tjfl-input>div>a {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background: #00b5b1;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    border-radius: 50px;
+    display: block;
+    float: left;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    behavior: url(PIE.htc);
+    margin: 3px 0 0 15px;
+}
+
+
+/* 下拉框样式 */
+
+.tjfl-input>div .sel-box4 .selectpick_div {
+    width: 300px !important;
+    height: 32px !important;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    text-align: left;
+    font-size: 16px;
+    color: #333333;
+    text-indent: 5px;
+    border: 1px solid #7dd1f1;
+}
+
+.tjfl-input>div .sel-box4 .selectpick_icon {
+    float: right;
+    background: url(../img/bottom.png) no-repeat center;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.tjfl-input>div .sel-box4 .selectpick_options {
+    width: 300px !important;
+    text-indent: 6px
+}
+
+.tjfl-input>div .sel-box4 ul {
+    float: none;
+}
+
+.tjfl-input>div .sel-box4 li {
+    float: none;
+    text-align: left;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    /*padding-left: 5px;*/
+    margin-right: 0;
+    background-color: #fff;
+    color: #333;
+    padding: 0;
+}
+
+.tjfl-input>div .sel-box4 li label {
+    float: none;
+    margin: 0;
+}
+
+.tjfl-input>div .sel-box4 .selectpick_options ul li.selectpick_options_selected,
+.tjfl-input>div .sel-box4 .selectpick_options li:hover {
+    background-color: #36b1e6;
+    color: #fff;
+}
+
+
+/* 变更页面弹窗样式 */
+
+.tjfl-input>div>ul {
+    float: left;
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.tjfl-input>div>ul li {
+    float: left;
+    overflow: hidden;
+    width: 100px;
+}
+
+.tjfl-input>div>ul li a {
+    display: block;
+    float: left;
+    width: 26px;
+    height: 26px;
+    line-height: 36px;
+    border: 1px solid #7dd1f1;
+    margin-right: 7px;
+    margin-top: 5px;
+}
+
+.tjfl-input>div>ul li label {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 36px;
+    margin-bottom: 0;
+    float: left;
+}
+
+.tjfl-input>div>ul li a.cur {
+    background: url(../img/gou-05.png) no-repeat;
+}
+
+
+/* 工作计划计划三级页面 */
+
+.gdtb tbody td a {
+    margin-right: 10px !important;
+}
+
+.r-con-left .tab_box>div div>label {
+    width: 90px;
+    margin-right: 10px !important;
+}
+
+.r-con-left .tab_box>div div.line2 {
+    width: 100%;
+    height: 40px;
+    /* overflow: hidden; */
+}
+
+.r-con-left .tab_box>div div.line2 .textarea,
+.r-con-left .tab_box>div div.line2 textarea {
+    width: 80%;
+    height: 220px;
+}
+
+.r-con-left .tab_box>div div.line2>div.data_sjc {
+    width: 80%;
+    overflow: hidden;
+    float: left;
+    margin: 3px 0 0 0;
+}
+
+.r-con-left .tab_box>div div.line2>div.data_sjc input {
+    width: 100%;
+    height: 30px;
+    line-height: 1.42857143;
+    text-indent: 0px !important;
+}
+
+.r-con-right .tab_box>div div.line6>input {
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 14px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+.r-con-right textarea {
+    width: 80%;
+    height: 210px;
+    overflow-y: scroll;
+}
+
+.r-con-right .tab_box>div div.line3 {
+    overflow: hidden;
+    width: 100%;
+}
+
+.r-con-right .tab_box>div div.line3>div {
+    width: 100%;
+    overflow: hidden;
+    float: left;
+}
+
+.r-con-right .tab_box>div div.line3>div div.title {
+    overflow: hidden;
+}
+
+.r-con-right .tab_box>div div.line3>div div.title label {
+    float: left;
+    width: 90px;
+    font-size: 15px;
+    line-height: 34px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.r-con-right .tab_box>div div.line3>div div.title a {
+    width: 80px;
+    height: 28px;
+    background: #f1624d;
+    font-size: 12px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    behavior: url(PIE.htc);
+    float: left;
+    margin: 5px 0 0 15px;
+}
+
+.r-con-right .tab_box>div div.line3>div div.title a:focus {
+    outline: none;
+}
+
+.r-con-right .tab_box>div div.line3>div div.fujianbox div {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.r-con-right .tab_box>div div.line3>div div.fujianbox div p {
+    float: left;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: underline;
+    max-width: 57%;
+    margin-bottom: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 0;
+}
+
+.r-con-right .tab_box>div div.line3>div div.fujianbox div a {
+    float: left;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left: 55px;
+    line-height: 34px;
+    color: #e8001e;
+}
+
+.r-con-left .tab_box>div div.line7 {
+    height: 30px;
+    width: 100%;
+    margin: 15px auto;
+}
+
+.r-con-right .tab_box>div div.line7 .sel-box2 {
+    float: left;
+}
+
+.r-con-right .tab_box>div div.line7 .sel-box2 .selectpick_div {
+    width: 255px !important;
+    height: 32px !important;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    text-align: left;
+    font-size: 14px;
+    color: #333333;
+    text-indent: 5px
+}
+
+.r-con-right .tab_box>div div.line7 .sel-box2 .selectpick_icon {
+    float: right;
+    background: url(../img/bottom4.png) no-repeat center;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.r-con-right .tab_box>div div.line7 .sel-box2 .selectpick_options {
+    width: 255px !important;
+    text-indent: 6px
+}
+
+.r-con-right .tab_box>div div.line7 .sel-box2 ul {
+    float: none;
+}
+
+.r-con-right .tab_box>div div.line7 .sel-box2 li {
+    float: none;
+    text-align: left;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    padding-left: 5px;
+}
+
+.r-con-right .tab_box>div div.line7 .sel-box2 li label {
+    float: none;
+    margin: 0;
+}
+
+.r-con-right .tab_box>div div.line7 .sel-box2 .selectpick_options ul li.selectpick_options_selected,
+.r-con-right .tab_box>div div.line7 .sel-box2 .selectpick_options ul li:hover {
+    background-color: #f26a56;
+}
+
+.r-con-left .tab_box>div div.line1 input {
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 14px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+}
+
+.r-con-left .tab_box>div .z2_btn {
+    background: #00a1de;
+    font-size: 18px;
+}
+
+.r-con-right .tab_box>div div.line4 input {
+    width: 80%;
+}
+
+.r-con-right .tab_box>div div.line2>div.data_sjc {
+    width: 80%;
+}
+
+
+/* 开发计划右侧表单 */
+
+.r-con-right .tab_box div.z3 table tr td>input {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.r-con-right .tab_box div.z3 table tr td .data_sjc {
+    margin: 0 auto;
+    float: none;
+}
+
+.r-con-right .tab_box div.z3 table tr td>a {
+    background: #f1624d;
+    width: 54px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+
+.r-con-right .tab_box div.z3 table tr td>a.del {
+    background: #f79880;
+}
+
+
+/* 通知提醒列表 */
+
+.second_table>div table tbody tr td a.link {
+    /* width: 60px; */
+    height: 28px;
+    line-height: 28px;
+    color: #333333;
+    font-size: 14px;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.second_table>div table tbody tr td a.link:hover {
+    color: #0079b7
+}

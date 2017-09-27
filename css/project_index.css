@@ -1,0 +1,94 @@
+/* 左侧按钮样式 */
+
+.left-list-01>ul>li .btn-info {
+    background-color: #7dd1f1;
+    border-color: #7dd1f1;
+    width: 56px;
+    height: 26px;
+}
+
+.left-list-02 .btn-success {
+    background-color: #42c28d;
+    border-color: #42c28d;
+    width: 56px;
+    height: 26px;
+}
+
+.left-list-02 .btn-success:hover {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+
+.btn-danger {
+    background-color: #f1624d;
+    border-color: #f1624d;
+}
+
+
+/* 右侧列表修改 */
+
+.right_list>li {
+    height: auto !important;
+    padding: 0 !important;
+}
+
+.right_list>li dl {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #b4e3f6;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.right_list>li dl h3 {
+    font-size: 16px;
+    color: #0ba5df;
+    font-weight: bold;
+}
+
+.right_list>li dl h3.wd {
+    color: #f26955
+}
+
+.right_list>li dl dd {
+    float: left;
+    width: 65%;
+}
+
+.right_list>li dl dd h3 {
+    text-align: left;
+}
+
+.right_list>li dl dd p a {
+    text-decoration: underline;
+}
+
+.right_list>li dl dt h3 {
+    text-align: center;
+    width: 84px;
+}
+
+.right_list>li dl dt {
+    float: right;
+    width: 84px;
+}
+
+.right_list>li dl dt a {
+    display: block;
+    width: 84px;
+    height: 25px;
+    line-height: 25px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    background: #7dd1f1;
+    font-size: 14px;
+    /* font-weight: bold; */
+}
+
+.right_list>li dl dt a:hover {
+    background: #068cbf;
+}

@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>html4_知识编辑</title>
+
+        <!-- Bootstrap -->
+        <link  href="css/bootstrap.min.css" rel="stylesheet">
+        <!--文件上传插件-->
+        <link rel="stylesheet" href="css/fileinput.min.css"  media="all" type="text/css">
+
+        <link rel="stylesheet" href="css/selectpick.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/shijian.css">
+        <link rel="stylesheet" href="css/third.css">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            .event_list_inner2>div.line1>a{
+                width: auto;padding:0 15px;
+                margin-left:5px;
+            }
+            .event_list_inner2 .line5>div div p{
+                margin-left: 30px;
+            }
+            .r-con-right .tab_box div.z3 table thead tr th{
+                color:#f1624d;
+            }
+            .gdtb tbody tr{
+                line-height: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="bg "><img class="img-responsive" src="img/top_01.jpg" alt="">
+            <!-- 导航条 -->
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- 导航头部 -->
+                    <div class="navbar-header" data-toggle="collapse">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <!-- 三条杠 -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                        <a><img src="img/log1.png" alt="img-top_01"></a>
+                    </div>
+                    <!-- 导航下边 -->
+                    <div class="collapse navbar-collapse navbar-responsive-collapse">
+                        <!-- 下拉的内容 -->
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a  href="second_index.html">
+                                    <img src="img/icon-01.png" alt="no-img">
+                                    <p>首&nbsp&nbsp&nbsp&nbsp&nbsp页</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="second.html">
+                                    <img src="img/icon-02.png" alt="no-img">
+                                    <p>维护管理</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="second_zc.html">
+                                    <img src="img/icon-03.png" alt="no-img">
+                                    <p>资产管理</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="second_ry.html">
+                                    <img src="img/icon-04.png" alt="no-img">
+                                    <p>人员管理</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="active" href="second_zs.html">
+                                    <img src="img/icon-05.png" alt="no-img">
+                                    <p>知识库</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="second_tj.html">
+                                    <img src="img/icon-06.png" alt="no-img">
+                                    <p>统计分析</p>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="#">
+                                    <img src="img/icon-09.png" alt="no-img">
+                                    <p>智慧报告</p>
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="second_zn.html">
+                                    <img src="img/icon-07.png" alt="no-img">
+                                    <p>智能预警</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="second_xt.html">
+                                    <img src="img/icon-08.png" alt="no-img">
+                                    <p>系统管理</p>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="down">
+                            <a href="#" class="person">
+                                <img src="img/4.jpg" alt="no-img">
+                                <span>姓名姓名</span>
+                            </a>
+                            <ul class="dropdown">
+                                <li data-toggle="modal" data-target="#myModal-message">
+                                    <a href="#">
+                                        <img src="img/icon-31.png" height="15" width="15" alt="" />
+                                        <span>个人信息</span>
+                                    </a>
+
+                                </li>
+                                <li  data-toggle="modal" data-target="#myModal-password">
+                                    <a href="#">
+                                        <img src="img/icon-32.png" height="15" width="15" alt="" />
+                                        <span>修改密码</span>
+                                    </a>
+                                </li>
+                                <li data-toggle="modal" data-target="#myModal-home">
+                                    <a href="#">
+                                        <img src="img/icon-33.png" height="15" width="15" alt="" />
+                                        <span>首页选择</span>
+                                    </a>
+                                </li>
+                                <li class="click4">
+                                    <a href="#">
+                                        <img src="img/icon-34.png" height="15" width="15" alt="" />
+                                        <span>安全退出</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- 模态框（Modal）  -->
+        <div class="carousel">
+            <!--个人信息弹出框-->
+            <!-- 模态框（Modal）  -->
+            <div class="modal fade" id="myModal-message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog message">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/img-01.png" alt="">
+                                个人信息
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="xinxi">
+                                    <div class="head">
+                                        <div><img src="img/4.jpg" height="144" width="144" alt="no-img" /></div>
+                                        <a class="new-head" data-toggle="modal" data-target="#myModal-newhead">更新头像</a>
+                                    </div>
+                                    <div class="inputs">
+                                        <div>
+                                            <label for="">登录名</label>
+                                            <input type="text" disabled="true"/>
+                                        </div>
+                                        <div>
+                                            <label for="">部&nbsp;&nbsp;&nbsp;门</label>
+                                            <input type="text" disabled="true"/>
+                                        </div>
+                                        <div>
+                                            <label for="">姓&nbsp;&nbsp;&nbsp;名</label>
+                                            <input type="text" />
+                                        </div>
+                                        <div>
+                                            <label for="">座&nbsp;&nbsp;&nbsp;机</label>
+                                            <input type="text" />
+                                        </div>
+                                        <div>
+                                            <label for="">手&nbsp;&nbsp;&nbsp;机</label>
+                                            <input type="text" />
+                                        </div>
+                                        <div>
+                                            <label for="">邮&nbsp;&nbsp;&nbsp;箱</label>
+                                            <input type="text" />
+                                        </div>
+                                        <div class="xuan">
+                                            <label for="">工作状态</label>
+                                            <div class="checkbox gou">
+                                                <input type="radio" name="1" checked/>
+                                                <label for="">在线</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input type="radio" name="1"/>
+                                                <label>离线</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">
+                               保存
+                            </button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">取消
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal -->
+            </div>
+
+            <!--修改密码弹出框-->
+            <!-- 模态框（Modal） -->
+            <div class="modal fade" id="myModal-password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog password">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/img-02.png" alt="no">
+                                修改密码
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="password-input">
+                                    <div>
+                                        <label for="">请输入新密码：</label>
+                                        <input type="text" />
+                                    </div>
+                                    <div>
+                                        <label for="">请再次输入新密码：</label>
+                                        <input type="text" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">
+                                保存
+                            </button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">取消
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal -->
+            </div>
+
+         <!--首页选择弹出框-->
+            <!-- 模态框（Modal） -->
+            <div class="modal fade" id="myModal-home" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog homeSelect">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/icon-09.png" alt="no">
+                               首页选择
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="homeSelect-check">
+                                    <div class="checkbox gou">
+                                        <input type="radio" name="2" checked/>
+                                        <a href="second.html">管理者主页</a>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="radio" name="2"/>
+                                        <a href="putong.html">普通用户主页</a>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="radio" name="2" />
+                                        <a href="index.html">工程师主页</a>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">
+                                设为默认
+                            </button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">取&nbsp;&nbsp;&nbsp;消
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal -->
+            </div>
+
+            <!--更新头像弹出框-->
+            <!-- 模态框（Modal） 
+            <div class="modal fade" id="myModal-newhead" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog headUp">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/img-01.png" alt="no">
+                                上传头像
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-group-btn">
+                                <input id="inputUp" name="txt_file" type="file" multiple class="file" data-show-preview="false" >
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">
+                                    上传
+                                </button>
+                            </div>
+                   </div>
+                  <!-- /.modal-content -->
+                
+                <!-- /.modal 
+            </div>--> 
+            </div>
+            <!--更新头像弹出框-->
+            <!-- 模态框（Modal） -->
+            <div  class="mynewhead" id="mynewhead"  role="dialog" aria-labelledby="myModalLabel" >
+                <div style="z-index: 1051 !important" class="modal-dialog headUp">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close close1" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/img-01.png" alt="no">
+                                上传头像
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-group-btn">
+                                <input id="inputUp" name="txt_file" type="file" multiple class="file" data-show-preview="false" >
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">
+                                    上传
+                                </button>
+                            </div>
+                   </div>
+                  <!-- /.modal-content -->
+                </div>
+               
+            </div>
+
+            <!--上传附件弹出框-->
+           <!--  模态框（Modal）  -->
+            <div class="modal fade" id="myModal-newfile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog newfile">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/img-01.png" alt="no">
+                                上传附件
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-group-btn">
+                                <input id="inputUp3" name="txt_file" type="file" multiple class="file" data-show-preview="false" >
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">
+                                    上传
+                                </button>
+                            </div>
+                   </div>
+                  <!-- /.modal-content -->
+                
+                <!-- /.modal -->
+            </div>
+
+        </div>
+            <!--事件关闭弹出框-->
+           <!--  模态框（Modal）  -->
+            <div class="modal fade" id="myModal-shijiangb" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog shijiangb">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                事件关闭
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div>
+                                    <div>
+                                        <label for="">退回原因</label>
+                                        <textarea name="" id="" placeholder="请输入"></textarea>
+                                    </div>
+                                    <div style="height: 50px;">
+                                        <label for="">完成状态</label>
+                                        <div class="sel-box10">
+                                                 <select name="" id="sel10">
+                                                     <option value="1">完成已解决</option>
+                                                     <option value="2">终端类1</option>
+                                                     <option value="3">终端类2</option>
+                                                     <option value="4">终端类3</option>
+                                                 </select>
+                                            </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary rad">
+                                    确定
+                                </button>
+                                <button type="button" class="btn btn-info rad" data-dismiss="modal">
+                                    取消
+                                </button>
+                            </div>
+                   </div>
+                  <!-- /.modal-content -->
+                
+                <!-- /.modal -->
+            </div>
+
+        <!--<div >-->
+        
+        </div>
+
+            <!--事件退回弹出框-->
+           <!--  模态框（Modal）  -->
+            <div class="modal fade" id="myModal-shijianth" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog shijianth">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                事件退回
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div>
+                                    <div>
+                                        <label for="">退回原因</label>
+                                        <textarea name="" id="" placeholder="请输入"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary rad">
+                                    确定
+                                </button>
+                                <button type="button" class="btn btn-info rad" data-dismiss="modal">
+                                    取消
+                                </button>
+                            </div>
+                   </div>
+                  <!-- /.modal-content -->
+                
+                <!-- /.modal -->
+            </div>
+
+        <!--<div >-->
+        
+        </div>
+            <!--工单派发弹出框-->
+           <!--  模态框（Modal）  -->
+          <div class="modal fade" id="myModal-gongdanpf" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog gongdanpf">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                工单派发
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div>
+                                    <div class="line1" >
+                                        <label for="">执行人</label>
+                                        <input type="text" />
+                                        <a class="gdxz" href="#">选择</a>
+                                    </div>
+                                    <div class="line2">
+                                        <label for="">工作类型</label>
+                                        <div class="sel-box11">
+                                                 <select name="" id="sel11">
+                                                     <option value="1">远程处理</option>
+                                                     <option value="2">终端类1</option>
+                                                     <option value="3">终端类2</option>
+                                                     <option value="4">终端类3</option>
+                                                 </select>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="">详细要求</label>
+                                        <textarea name="" id="" placeholder="请输入"></textarea>
+                                    </div>
+                                    <div style="overflow: hidden;">
+                                        <label for="">要求解决时间</label>
+                                        <div id="datetimepicker" class="input-group date form_datetime data_sjc_box" >
+                                            <input  class="form-control" size="16" type="text" value="" >
+                                            <span class="input-group-addon" ><span class="glyphicon glyphicon-th"></span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary rad">
+                                    确定
+                                </button>
+                                <button type="button" class="btn btn-info rad" data-dismiss="modal">
+                                    取消
+                                </button>
+                            </div>
+                   </div>
+                  <!-- /.modal-content -->
+                
+                <!-- /.modal -->
+            </div>
+
+        <!--<div >-->
+        
+        </div>
+
+            <!--工单处理人选择弹出框-->
+           <!--  模态框（Modal）  -->
+          <div class="gdperchoice_box modal" id="myModal-gdperchoice" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog gdperchoice">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close close1" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                工单处理人选择
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form  style="margin:0 ;padding:0">
+                                    <div class="gdperchoice_left">
+                                        <h3>组织结构</h3>
+                                        <div class="zz_box"></div>
+                                    </div>
+                                    <div class="gdperchoice_right"> 
+                                        <div class="gdperchoice_right_search">
+                                            <h3>搜&nbsp&nbsp索</h3>
+                                            <input type="text" placeholder="姓名、部门、电话、手机" / maxlength="25" >
+                                            <button></button>
+                                        </div>
+                                        <div style="clear:both"></div>
+                                        <div class="gdperchoice_right_tb_box">
+                                                <div class="gdperchoice_right_tb">
+                                                    <table>
+                                                            <thead>
+                                                                <th>姓名</th>
+                                                                <th>部门</th>
+                                                                <th>电话</th>
+                                                                <th>手机</th>
+                                                                <th></th>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>赵恒平</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>严敏</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>李仡</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>徐璐</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>滕树宝</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>赵恒平</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+
+                                                    </table>
+                                                    <div class="fenpage">
+                                                        <a class="before" href="#"><</a>
+                                                        <ul>
+                                                            <li><a class="active" href="#">1</a></li>
+                                                            <li><a href="#">2</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">4</a></li>
+                                                            <li><a href="#">5</a></li>
+                                                            <li><a href="#">6</a></li>
+                                                        </ul>
+                                                        <a href="#" class="next">></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="xzry">
+                                                    <label for="">选中人员</label>
+                                                    <div>
+                                                        <p>金三胖</p>
+                                                        <a href="#">X</a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary rad">
+                                    确定
+                                </button>
+                                <button type="button" class="btn btn-info rad  close1" data-dismiss="modal">
+                                    取消
+                                </button>
+                        </div>
+                    </div>
+                  <!-- /.modal-content -->
+                
+                <!-- /.modal -->
+                </div>
+
+        <!--<div >-->
+        
+          </div>
+        <!--事件负责人选择按钮弹框-->
+                 <!-- 模态框（Modal） -->
+                 <div class="modal fade" id="myModal-shijianfzr" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+                     <div class="modal-dialog perchoice">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                     <img src="img/title_img.png" alt="no" />
+                                 </button>
+                                 <h4 class="modal-title" id="">
+                                     事件负责人选择
+                                 </h4>
+                             </div>
+                             <div class="modal-body">
+                                <form  style="margin:0 ;padding:0">
+                                    <div class="perchoice_left">
+                                        <h3>组织结构</h3>
+                                        <div class="zz_box"></div>
+                                    </div>
+                                    <div class="perchoice_right">   
+                                        <div class="perchoice_right_search">
+                                            <h3>搜&nbsp&nbsp索</h3>
+                                            <input type="text" placeholder="姓名、部门、电话、手机" />
+                                            <button></button>
+                                        </div>
+                                        <div style="clear:both"></div>
+                                        <div class="perchoice_right_tb">
+                                            <table>
+                                                    <thead>
+                                                        <th>姓名</th>
+                                                        <th>部门</th>
+                                                        <th>电话</th>
+                                                        <th>手机</th>
+                                                        <th></th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>赵恒平</td>
+                                                            <td>中信信息/智慧政务/软件二部</td>
+                                                            <td>9729</td>
+                                                            <td>13219019010</td>
+                                                            <td>
+                                                                <ul class="r-check">
+                                                                    <li><input type="checkbox" name="1" />
+                                                                    <label ></label></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>严敏</td>
+                                                            <td>中信信息/智慧政务/软件二部</td>
+                                                            <td>9729</td>
+                                                            <td>13219019010</td>
+                                                            <td>
+                                                                <ul class="r-check">
+                                                                    <li><input type="checkbox" name="1" />
+                                                                    <label ></label></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>李仡</td>
+                                                            <td>中信信息/智慧政务/产品研发部</td>
+                                                            <td>9729</td>
+                                                            <td>13219019010</td>
+                                                            <td>
+                                                                <ul class="r-check">
+                                                                    <li><input type="checkbox" name="1" />
+                                                                    <label ></label></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>徐璐</td>
+                                                            <td>中信信息/智慧政务/产品研发部</td>
+                                                            <td>9729</td>
+                                                            <td>13219019010</td>
+                                                            <td>
+                                                                <ul class="r-check">
+                                                                    <li><input type="checkbox" name="1" />
+                                                                    <label ></label></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>滕树宝</td>
+                                                            <td>中信信息/智慧政务/产品研发部</td>
+                                                            <td>9729</td>
+                                                            <td>13219019010</td>
+                                                            <td>
+                                                                <ul class="r-check">
+                                                                    <li><input type="checkbox" name="1" />
+                                                                    <label ></label></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>赵恒平</td>
+                                                            <td>中信信息/智慧政务/软件二部</td>
+                                                            <td>9729</td>
+                                                            <td>13219019010</td>
+                                                            <td>
+                                                                <ul class="r-check">
+                                                                    <li><input type="checkbox" name="1" />
+                                                                    <label ></label></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                            </table>
+                                            <div class="fenpage">
+                                                <a class="before" href="#"><</a>
+                                                <ul>
+                                                    <li><a class="active" href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">6</a></li>
+                                                </ul>
+                                                <a href="#" class="next">></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                             </div>
+                             <div class="modal-footer">
+                                 <button type="button" class="btn btn-primary">
+                                     确定
+                                 </button>
+                                 <button type="button" class="btn btn-info" data-dismiss="modal">取消
+                                 </button>
+                             </div>
+                         </div>
+                         <!-- /.modal-content -->
+                     </div>
+                     <!-- /.modal -->
+                 </div>
+        <!--工单处理人选择弹出框-->
+           <!--  模态框（Modal）  -->
+          <div class=" modal fade" id="myModal-gdperchoice2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog gdperchoice">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                工单处理人选择
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form  style="margin:0 ;padding:0">
+                                    <div class="gdperchoice_left">
+                                        <h3>组织结构</h3>
+                                        <div class="zz_box"></div>
+                                    </div>
+                                    <div class="gdperchoice_right"> 
+                                        <div class="gdperchoice_right_search">
+                                            <h3>搜&nbsp&nbsp索</h3>
+                                            <input type="text" placeholder="姓名、部门、电话、手机" / maxlength="25" >
+                                            <button></button>
+                                        </div>
+                                        <div style="clear:both"></div>
+                                        <div class="gdperchoice_right_tb_box">
+                                                <div class="gdperchoice_right_tb">
+                                                    <table>
+                                                            <thead>
+                                                                <th>姓名</th>
+                                                                <th>部门</th>
+                                                                <th>电话</th>
+                                                                <th>手机</th>
+                                                                <th></th>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>赵恒平</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>严敏</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>李仡</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>徐璐</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>滕树宝</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>赵恒平</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+
+                                                    </table>
+                                                    <div class="fenpage">
+                                                        <a class="before" href="#"><</a>
+                                                        <ul>
+                                                            <li><a class="active" href="#">1</a></li>
+                                                            <li><a href="#">2</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">4</a></li>
+                                                            <li><a href="#">5</a></li>
+                                                            <li><a href="#">6</a></li>
+                                                        </ul>
+                                                        <a href="#" class="next">></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="xzry">
+                                                    <label for="">选中人员</label>
+                                                    <div>
+                                                        <p>金三胖</p>
+                                                        <a href="#">X</a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary rad">
+                                    确定
+                                </button>
+                                <button type="button" class="btn btn-info rad" data-dismiss="modal">
+                                    取消
+                                </button>
+                        </div>
+                    </div>
+                  <!-- /.modal-content -->
+                
+                <!-- /.modal -->
+                </div>
+
+        <!--<div >-->
+        
+          </div>
+        <!-- 跟踪信息模态框（Modal） -->
+            <div class="modal fade" id="myModal-danger2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog danger">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                               <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                跟踪信息
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <label for="">添加跟踪信息：</label>
+                                <textarea name="" id="" rows="10" cols="53"></textarea>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary rad">
+                               保存
+                            </button>
+                            <button type="button" class="btn btn-info rad" data-dismiss="modal">取消
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal -->
+            </div>
+        <!--工单处理人选择弹出框-->
+           <!--  模态框（Modal）  -->
+          <div class="gdperchoice_box modal" id="myModal-gdperchoice" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog gdperchoice">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close close1" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                工单处理人选择
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form  style="margin:0 ;padding:0">
+                                    <div class="gdperchoice_left">
+                                        <h3>组织结构</h3>
+                                        <div class="zz_box"></div>
+                                    </div>
+                                    <div class="gdperchoice_right"> 
+                                        <div class="gdperchoice_right_search">
+                                            <h3>搜&nbsp&nbsp索</h3>
+                                            <input type="text" placeholder="姓名、部门、电话、手机" / maxlength="25" >
+                                            <button></button>
+                                        </div>
+                                        <div style="clear:both"></div>
+                                        <div class="gdperchoice_right_tb_box">
+                                                <div class="gdperchoice_right_tb">
+                                                    <table>
+                                                            <thead>
+                                                                <th>姓名</th>
+                                                                <th>部门</th>
+                                                                <th>电话</th>
+                                                                <th>手机</th>
+                                                                <th></th>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>赵恒平</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>严敏</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>李仡</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>徐璐</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>滕树宝</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>赵恒平</td>
+                                                                    <td>上海分/软件一部</td>
+                                                                    <td>9729</td>
+                                                                    <td>13219019010</td>
+                                                                    <td>
+                                                                        <a href="#">选择</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+
+                                                    </table>
+                                                    <div class="fenpage">
+                                                        <a class="before" href="#"><</a>
+                                                        <ul>
+                                                            <li><a class="active" href="#">1</a></li>
+                                                            <li><a href="#">2</a></li>
+                                                            <li><a href="#">3</a></li>
+                                                            <li><a href="#">4</a></li>
+                                                            <li><a href="#">5</a></li>
+                                                            <li><a href="#">6</a></li>
+                                                        </ul>
+                                                        <a href="#" class="next">></a>
+
+                                                    </div>
+                                                </div>
+                                                <div class="xzry">
+                                                    <label for="">选中人员</label>
+                                                    <div>
+                                                        <p>金三胖</p>
+                                                        <a href="#">X</a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary rad">
+                                    确定
+                                </button>
+                                <button type="button" class="btn btn-info rad  close1" data-dismiss="modal">
+                                    取消
+                                </button>
+                        </div>
+                    </div>
+                  <!-- /.modal-content -->
+                
+                <!-- /.modal -->
+                </div>
+
+        <!--<div >-->
+        
+          </div>
+
+          <!--添加关联资产按钮弹框-->
+                 <!-- 模态框（Modal） -->
+                 <div class="modal fade" id="myModal-perchoice3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+                     <div class="modal-dialog perchoice">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                     <img src="img/title_img.png" alt="no" />
+                                 </button>
+                                 <h4 class="modal-title" id="">
+                                     添加关联资产
+                                 </h4>
+                             </div>
+                             <div class="modal-body">
+                                <form  style="margin:0 ;padding:0">
+                                    <div class="perchoice_left">
+                                        <h3>资产类别</h3>
+                                        <div class="zz_box"></div>
+                                    </div>
+                                    <div class="perchoice_right">   
+                                        <div class="perchoice_right_search">
+                                            <h3>搜&nbsp&nbsp索</h3>
+                                            <input type="text" placeholder="姓名、部门、电话、手机" />
+                                            <button></button>
+                                        </div>
+                                        <div style="clear:both"></div>
+                                        <div class="perchoice_right_tb">
+                                            <table >
+                                                    <thead>
+                                                        <th style="width: 16%">资产名称</th>
+                                                        <th style="width: 16%">资产类别</th>
+                                                        <th style="width: 16%">状态</th>
+                                                        <th style="width: 16%">负责人</th>
+                                                        <th style="width: 16%">使用人</th>
+                                                        <th style="width: 16%"></th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>3楼打印机</td>
+                                                            <td>终端/打印机</td>
+                                                            <td>使用</td>
+                                                            <td>韦小宝</td>
+                                                            <td>陈近南</td>
+                                                            <td>
+                                                                <ul class="r-check">
+                                                                    <li><input type="checkbox" name="1" />
+                                                                    <label ></label></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4楼打印机</td>
+                                                            <td>终端/打印机</td>
+                                                            <td>使用</td>
+                                                            <td>韦小宝</td>
+                                                            <td>陈近南</td>
+                                                            <td>
+                                                                <ul class="r-check">
+                                                                    <li><input type="checkbox" name="1" />
+                                                                    <label ></label></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+
+                                            </table>
+                                            <div class="fenpage">
+                                                <a class="before" href="#"><</a>
+                                                <ul>
+                                                    <li><a class="active" href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">6</a></li>
+                                                </ul>
+                                                <a href="#" class="next">></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                             </div>
+                             <div class="modal-footer">
+                                 <button type="button" class="btn btn-primary rad">
+                                     确定
+                                 </button>
+                                 <button type="button" class="btn btn-info rad" data-dismiss="modal">取消
+                                 </button>
+                             </div>
+                         </div>
+                         <!-- /.modal-content -->
+                     </div>
+                     <!-- /.modal -->
+                 </div>
+
+            <!--添加关联知识按钮弹框-->
+                 <!-- 模态框（Modal） -->
+                 <div class="modal fade" id="myModal-perchoice4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+                     <div class="modal-dialog perchoice" style="width: 710px;margin-left: -355px">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                     <img src="img/title_img.png" alt="no" />
+                                 </button>
+                                 <h4 class="modal-title" id="">
+                                     添加关联知识
+                                 </h4>
+                             </div>
+                             <div class="modal-body">
+                                <form  style="margin:0 ;padding:0">
+                                    
+                                    <div class="perchoice_right" style="width: 100%">   
+                                        <div class="perchoice_right_search">
+                                            <h3>搜&nbsp&nbsp索</h3>
+                                            <input type="text" placeholder="姓名、部门、电话、手机" />
+                                            <button></button>
+                                        </div>
+                                        <div style="clear:both"></div>
+                                        <div class="perchoice_right_tb">
+                                            <table >
+                                                    <thead>
+                                                        <th >知识名称</th>
+                                                        <th >知识分类</th>
+                                                        <th >作者</th>
+                                                        <th >关键词</th>
+                                                        <th style="width: 10%"></th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>OA系统操作手册</td>
+                                                            <td>操作手册/OA</td>
+                                                            <td>周芷若</td>
+                                                            <td>OA系统；日常操作</td>
+                                                            <td>
+                                                                <ul class="r-check">
+                                                                    <li><input type="checkbox" name="1" />
+                                                                    <label ></label></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ITIL流程介绍</td>
+                                                            <td>理论知识/IT服务</td>
+                                                            <td>赵敏</td>
+                                                            <td>ITIL；IT服务管理</td>
+                                                            <td>
+                                                                <ul class="r-check">
+                                                                    <li><input type="checkbox" name="1" />
+                                                                    <label ></label></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+
+                                            </table>
+                                            <div class="fenpage">
+                                                <a class="before" href="#"><</a>
+                                                <ul>
+                                                    <li><a class="active" href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">6</a></li>
+                                                </ul>
+                                                <a href="#" class="next">></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                             </div>
+                             <div class="modal-footer">
+                                 <button type="button" class="btn btn-primary rad">
+                                     确定
+                                 </button>
+                                 <button type="button" class="btn btn-info rad" data-dismiss="modal">取消
+                                 </button>
+                             </div>
+                         </div>
+                         <!-- /.modal-content -->
+                     </div>
+                     <!-- /.modal -->
+                 </div>
+
+        <div class="main" style="position:static ">
+            <!-- 目录显示部分 -->
+            <div class="event_list2">
+                <div>
+                    <!-- <div class="event_list2_inner1">
+                        <label for="">合同编号</label>
+                        <a href="#">HT20170201002</a>
+                    </div>
+                    <div class="list_bg2"></div> -->
+                    <div class="event_list2_inner2">
+                        <!-- <label for="" style="width: 130px;">预警处理</label> -->
+                        <a href="#">提交审核</a>
+                        <a href="#">保&nbsp&nbsp&nbsp存</a>
+                       <!--  <a href="#">终&nbsp&nbsp&nbsp止</a> -->
+                    </div>
+                </div>
+            </div>
+            <!-- 信息显示部分 -->
+            <img src="img/html4_zsbj.png" alt="" style="width: 85%;margin:20px auto 20px auto">
+           
+            
+        </div>
+
+        <div class="shadow"></div>
+        <!--</div>    -->
+        <script src="js/jquery.1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.spinner.min.js"></script>
+        <script src="js/fileinput.js"></script>
+        <script src="js/selectpick.js"></script>
+        <script src="js/respond.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('.navbar-toggle').click(function() {
+                        $('.navbar-nav').toggle(200);
+                    })
+
+                // body...
+
+                $('.modal-content').draggable();//使弹窗可移动
+                $('.spinner').spinner();
+
+
+                $('.xuan .checkbox>input').click(function () {
+                    $(this).parents('.checkbox').addClass('gou').siblings().removeClass('gou');
+                });
+                $('.homeSelect-check .checkbox>input').click(function () {
+                    $(this).parents('.checkbox').addClass('gou').siblings().removeClass('gou');
+                });
+
+//              select选择框
+                $("#sel").selectpick({container:'.sel-box',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+                $("#sel1").selectpick({container:'.sel-box1',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+                $("#sel2").selectpick({container:'.sel-box2',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+
+                $("#sel3").selectpick({container:'.sel-box3',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+                $("#sel4").selectpick({container:'.sel-box4',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+                $("#sel5").selectpick({container:'.sel-box5',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+                $("#sel6").selectpick({container:'.sel-box6',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+                $("#sel7").selectpick({container:'.sel-box7',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+                $("#sel8").selectpick({container:'.sel-box8',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+                $("#sel9").selectpick({container:'.sel-box9',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+                $("#sel10").selectpick({container:'.sel-box10',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+                $("#sel11").selectpick({container:'.sel-box11',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+                $("#sel12").selectpick({container:'.sel-box12',onSelect:function(value,text){
+                    // enAble();
+                    }
+                });
+//              详细信息的复选框
+                $('.r-check li input').click(function () {
+                    if ($(this).parents('li').hasClass('gou-active')){
+                        $(this).parents('li').removeClass('gou-active');
+                    }else{
+                        $(this).parents('li').addClass('gou-active');
+                    }
+                })
+                $('#datetimepicker').datetimepicker({
+                        language:  'zh-CN',
+                        weekStart: 1,
+                        todayBtn:  1,
+                        autoclose: 1,
+                        todayHighlight: 1,
+                        startView: 2,
+                        forceParse: 0,
+                        showMeridian: 1,
+                        pickerPosition: "top-left"
+                    });
+                $('#datetimepicker2').datetimepicker({
+                        language:  'zh-CN',
+                        weekStart: 1,
+                        todayBtn:  1,
+                        autoclose: 1,
+                        todayHighlight: 1,
+                        startView: 2,
+                        forceParse: 0,
+                        showMeridian: 1,
+                        pickerPosition: "bottom-left"
+                    });
+            });
+//          取消文件上传插件的Upload按钮
+            $("#inputUp").fileinput({
+                showUpload:false
+            });
+            $("#inputUp2").fileinput({
+                showUpload:false
+            });
+            $("#inputUp3").fileinput({
+                showUpload:false
+            });
+            // 个人信息弹出框JS
+            $(".new-head").click(function(){
+                    $(".shadow").fadeIn(300);
+                    $("#mynewhead").fadeIn(300);
+            });
+            $(".close1").click(function(){
+                    $(".shadow").fadeOut(300);
+                    $("#mynewhead").fadeOut(300);
+            });
+            // 结束
+            // 个人信息弹出框JS
+            $(".gdxz").click(function(){
+                    $(".shadow").fadeIn(300);
+                    $(".gdperchoice_box").fadeIn(300);
+            });
+            $(".close1").click(function(){
+                    $(".shadow").fadeOut(300);
+                    $(".gdperchoice_box").fadeOut(300);
+            });
+            // 结束
+            // 
+            // tab 切换部分
+                $(function(){
+                    var $div_li = $("div.tab_menu ul li");
+                    $div_li.click(function(){  // 绑定单击事件
+                        $(this).addClass("active") //当前<li>元素高亮
+                        .siblings().removeClass("active"); //去掉其它同辈<li>元素的高亮
+                    var index = $div_li.index(this); //获取当前单击的<li>元素在全部<li>元素中的索引
+                    $("div.tab_box>div")  // 选取子节点
+                        .eq(index).show()   //显示<li>元素对应的<div>元素
+                        .siblings().hide(); //隐藏其他几个同辈的<div>元素
+                    });
+                });
+
+            $("#sjfl").click(function(){
+                    $("#xz_box").slideDown();
+                    // $("#xz_box1").slideUp();
+                    event.stopPropagation();
+            });
+            $("#xz_box").click(function(event){
+                    //$("#xz_box").slideDown();
+                    event.stopPropagation();
+            });
+            $(".qingqiu_content").click(function(){
+                    $("#xz_box").slideUp();
+            });
+            $(".sjfl_box>input").click(function(event){
+                    //$("#xz_box").slideDown();
+                    event.stopPropagation();
+            });
+
+
+            $("#sjfl1").click(function(){
+                    $("#xz_box").slideUp();
+                    $("#xz_box1").slideDown();
+                    event.stopPropagation();
+            });
+            $("#xz_box1").click(function(event){
+                    //$("#xz_box").slideDown();
+                    event.stopPropagation();
+            });
+            $(".qingqiu_content").click(function(){
+                    $("#xz_box1").slideUp();
+            });
+            $(".sjfl_box>input").click(function(event){
+                    //$("#xz_box").slideDown();
+                    event.stopPropagation();
+            });
+        </script>
+        </script>
+    </body>
+
+</html>

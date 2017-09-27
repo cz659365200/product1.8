@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>智能预警</title>
+
+		<!-- Bootstrap -->
+		<link  href="css/bootstrap.min.css" rel="stylesheet">
+		<!--文件上传插件-->
+		<link rel="stylesheet" href="css/fileinput.min.css"  media="all" type="text/css">
+
+		<link rel="stylesheet" href="css/selectpick.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/second.css">
+		<link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+		<div class="bg "><img class="img-responsive" src="img/top_01.jpg" alt="">
+			<!-- 导航条 -->
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- 导航头部 -->
+					<div class="navbar-header" data-toggle="collapse">
+						<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <!-- 三条杠 -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+						<a><img src="img/log1.png" alt="img-top_01"></a>
+					</div>
+					<!-- 导航下边 -->
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<!-- 下拉的内容 -->
+						<ul class="nav navbar-nav">
+							<li>
+								<a  href="second_index.html">
+									<img src="img/icon-01.png" alt="no-img">
+									<p>首&nbsp&nbsp&nbsp&nbsp&nbsp页</p>
+								</a>
+							</li>
+							<li>
+								<a href="second.html">
+									<img src="img/icon-02.png" alt="no-img">
+									<p>维护管理</p>
+								</a>
+							</li>
+							<li>
+								<a href="second_zc.html">
+									<img src="img/icon-03.png" alt="no-img">
+									<p>资产管理</p>
+								</a>
+							</li>
+							<li>
+								<a href="second_ry.html">
+									<img src="img/icon-04.png" alt="no-img">
+									<p>人员管理</p>
+								</a>
+							</li>
+							<li>
+								<a href="second_zs.html">
+									<img src="img/icon-05.png" alt="no-img">
+									<p>知识库</p>
+								</a>
+							</li>
+							<li>
+								<a href="second_tj.html">
+									<img src="img/icon-06.png" alt="no-img">
+									<p>统计分析</p>
+								</a>
+							</li>
+							<!-- <li>
+								<a href="#">
+									<img src="img/icon-09.png" alt="no-img">
+									<p>智慧报告</p>
+								</a>
+							</li> -->
+							<li>
+								<a class="active" href="#">
+									<img src="img/icon-07.png" alt="no-img">
+									<p>智能预警</p>
+								</a>
+							</li>
+							<li>
+								<a href="second_xt.html">
+									<img src="img/icon-08.png" alt="no-img">
+									<p>系统管理</p>
+								</a>
+							</li>
+						</ul>
+
+                        <div class="down">
+                            <a href="#" class="person">
+                                <img src="img/4.jpg" alt="no-img">
+                                <span>姓名姓名</span>
+                            </a>
+                            <ul class="dropdown">
+                                <li data-toggle="modal" data-target="#myModal-message">
+                                    <a href="#">
+                                        <img src="img/icon-31.png" height="15" width="15" alt="" />
+                                        <span>个人信息</span>
+                                    </a>
+
+                                </li>
+                                <li  data-toggle="modal" data-target="#myModal-password">
+                                    <a href="#">
+                                        <img src="img/icon-32.png" height="15" width="15" alt="" />
+                                        <span>修改密码</span>
+                                    </a>
+                                </li>
+                                <li data-toggle="modal" data-target="#myModal-home">
+                                    <a href="#">
+                                        <img src="img/icon-33.png" height="15" width="15" alt="" />
+                                        <span>首页选择</span>
+                                    </a>
+                                </li>
+                                <li class="click4">
+                                    <a href="#">
+                                        <img src="img/icon-34.png" height="15" width="15" alt="" />
+                                        <span>安全退出</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+					</div>
+				</div>
+			</nav>
+		</div>
+
+        <!-- 模态框（Modal）  -->
+		<div class="carousel">
+            <!--个人信息弹出框-->
+			<!-- 模态框（Modal）  -->
+			<div class="modal fade" id="myModal-message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog message">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+		                        <img src="img/title_img.png" alt="no" />
+		                    </button>
+							<h4 class="modal-title" id="">
+                                <img src="img/img-01.png" alt="">
+                                个人信息
+                            </h4>
+						</div>
+						<div class="modal-body">
+							<form action="">
+								<div class="xinxi">
+									<div class="head">
+										<div><img src="img/4.jpg" height="144" width="144" alt="no-img" /></div>
+										<a class="new-head" data-toggle="modal" data-target="#myModal-newhead">更新头像</a>
+									</div>
+									<div class="inputs">
+										<div>
+											<label for="">登录名</label>
+											<input type="text" disabled="true"/>
+										</div>
+										<div>
+											<label for="">部&nbsp;&nbsp;&nbsp;门</label>
+											<input type="text" disabled="true"/>
+										</div>
+										<div>
+											<label for="">姓&nbsp;&nbsp;&nbsp;名</label>
+											<input type="text" />
+										</div>
+										<div>
+											<label for="">座&nbsp;&nbsp;&nbsp;机</label>
+											<input type="text" />
+										</div>
+										<div>
+											<label for="">手&nbsp;&nbsp;&nbsp;机</label>
+											<input type="text" />
+										</div>
+										<div>
+											<label for="">邮&nbsp;&nbsp;&nbsp;箱</label>
+											<input type="text" />
+										</div>
+										<div class="xuan">
+											<label for="">工作状态</label>
+											<div class="checkbox gou">
+												<input type="radio" name="1" checked/>
+												<label for="">在线</label>
+											</div>
+											<div class="checkbox">
+												<input type="radio" name="1"/>
+												<label>离线</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+                            <button type="button" class="btn btn-primary">
+                               保存
+                            </button>
+							<button type="button" class="btn btn-info" data-dismiss="modal">取消
+                            </button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal -->
+			</div>
+
+            <!--修改密码弹出框-->
+            <!-- 模态框（Modal） -->
+            <div class="modal fade" id="myModal-password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog password">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/img-02.png" alt="no">
+                                修改密码
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="password-input">
+                                    <div>
+                                        <label for="">请输入新密码：</label>
+                                        <input type="text" />
+                                    </div>
+                                    <div>
+                                        <label for="">请再次输入新密码：</label>
+                                        <input type="text" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">
+                                保存
+                            </button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">取消
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal -->
+            </div>
+
+         <!--首页选择弹出框-->
+            <!-- 模态框（Modal） -->
+            <div class="modal fade" id="myModal-home" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog homeSelect">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/icon-09.png" alt="no">
+                               首页选择
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="homeSelect-check">
+									<div class="checkbox gou">
+										<input type="radio" name="2" checked/>
+										<a href="second.html">管理者主页</a>
+									</div>
+									<div class="checkbox">
+										<input type="radio" name="2"/>
+										<a href="putong.html">普通用户主页</a>
+									</div>
+									<div class="checkbox">
+										<input type="radio" name="2" />
+										<a href="index.html">工程师主页</a>
+									</div>
+
+								</div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">
+                                设为默认
+                            </button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">取&nbsp;&nbsp;&nbsp;消
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal -->
+            </div>
+
+            
+			<!--更新头像弹出框-->
+            <!-- 模态框（Modal） -->
+            <div  class="mynewhead" id="mynewhead"  role="dialog" aria-labelledby="myModalLabel" >
+                <div style="z-index: 1051 !important" class="modal-dialog headUp">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close close1" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/img-01.png" alt="no">
+                                上传头像
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+							<div class="input-group-btn">
+								<input id="inputUp" name="txt_file" type="file" multiple class="file" data-show-preview="false" >
+							</div>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">
+                                    上传
+                                </button>
+                            </div>
+                   </div>
+                  <!-- /.modal-content -->
+                </div>
+               
+            </div>
+
+			<!--上传附件弹出框-->
+           <!--  模态框（Modal）  -->
+            <div class="modal fade" id="myModal-newfile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog newfile">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                            <h4 class="modal-title" id="">
+                                <img src="img/img-01.png" alt="no">
+                                上传附件
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+							<div class="input-group-btn">
+								<input id="inputUp3" name="txt_file" type="file" multiple class="file" data-show-preview="false" >
+							</div>
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">
+                                    上传
+                                </button>
+                            </div>
+                   </div>
+                  <!-- /.modal-content -->
+                
+                <!-- /.modal -->
+            </div>
+
+	    </div>
+
+		</div>
+		<div class="second_main">
+			<div class="second_main_left">
+				<ul class="main_left_nav">
+					<li>
+						<a href="second_zn.html">智能预警总览</a>
+					</li>
+					<li class="active">
+						<a href="#">运维服务预警</a>
+						<ul style="display: block;">
+							<li class="active"><a href="#">预警列表(<span>111</span>)</a></li>
+							<li><a href="second_zn_2.html">预警规则(<span>11</span>)</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">运维人员预警</a>
+					</li>
+					<li>
+						<a href="#">运维资产预警</a>
+					</li>
+				</ul>
+				<a class="cli" ></a>
+			</div>
+			<div class="show_btn"> <img src="img/back_right.png" alt=""></div>
+			<div class="second_main_right">
+				<form action="">
+					<div class="second_main_right_content">
+							<div class="right_content1">
+								<div class="line1">                               
+									<div class="line_dxk">
+										<label for="">预警级别</label>
+										<ul>
+											<li class="active">全部</li>
+											<li>严重</li>
+											<li>一般</li>
+										</ul>
+									</div>
+									<input type="text" placeholder="预警内容、触发规则、批注人、批注内容" maxlength="15" />
+									<input type="button" name="" value="搜&nbsp&nbsp&nbsp索">
+								</div>
+								<div class="line1">                                  
+									<div class="line_dxk">
+										<label for="">预警时间</label>
+										<ul>
+											<li class="active">全部</li>
+											<li>今日</li>
+											<li>本周</li>
+											<li>本月</li>
+											<li>本年</li>
+										</ul>
+									</div>
+									<div class="data_sjc input-append date form_datetime">
+										  <div id="datetimepicker" class="input-group date form_datetime data_sjc_box" >
+						                    <input  class="form-control" size="16" type="text" placeholder="起始时间" >
+											<span class="input-group-addon" ><span class="glyphicon glyphicon-th"></span></span>
+						                </div>
+						                <label for="">至</label>
+						                <div id="datetimepicker1" class="input-group date form_datetime data_sjc_box" >
+						                    <input  class="form-control" size="16" type="text" placeholder="终止时间" >
+											<span class="input-group-addon" ><span class="glyphicon glyphicon-th"></span></span>
+						                </div>
+									 </div>
+								</div>
+							</div>
+						
+							
+							<div class="second_table" style="height: 495px;">
+								<div>
+									<table>                                                         
+										<thead>                                                                              
+											<tr>
+												<th width="5%">
+													<ul class="r-check">
+														<li><input type="checkbox" name="1" />
+														<label ></label></li>
+													</ul>
+												</th>
+												<th width="15%">预警时间</th>
+												<th width="10%">预警级别</th>
+												<th>预警内容</th>
+												<th>触发规则</th>
+												<th >最新批注人</th>
+												<th width="25%">批注内容</th>
+												<th>操作</th>
+											</tr>
+										</thead>                         
+										<tbody>	
+											<tr>                                                                        
+												<td>
+													<ul class="r-check">
+														<li><input type="checkbox" name="1" />
+														<label ></label></li>
+													</ul>
+												</td>
+												<td>2017-03-01    9:00</td>
+												<td>一般</td>
+												<td class="ms">本周服务差评已达3次</td>
+												<td>周服务差评预警1</td>
+												<td>冯林</td>
+												<td class="ms">重点维护组罚款500</td>
+												<td><a href="third_html6_gzxx.html" target="_blank">查看</a></td>
+											</tr>                                                                  
+											<tr>                                                
+												<td>
+													<ul class="r-check">
+														<li><input type="checkbox" name="1" />
+														<label ></label></li>
+													</ul>
+												</td>
+												<td>2017-02-25    8:00</td>
+												<td>严重</td>
+												<td class="ms">本月服务差评已达10次</td>
+												<td>月服务差评预警2</td>
+												<td>冯林</td>
+												<td class="ms">请各运维公司项目负责人下次例会专项讨论</td>
+												<td><a href="third_html6_gzxx.html" target="_blank">查看</a></td>
+											</tr>   
+											<tr>                                              
+												<td>
+													<ul class="r-check">
+														<li><input type="checkbox" name="1" />
+														<label ></label></li>
+													</ul>
+												</td>
+												<td>2017-02-24    8:00</td>
+												<td>一般</td>
+												<td class="ms">本月OA故障报修已达10次</td>
+												<td>月OA报修预警</td>
+												<td>殷俊</td>
+												<td class="ms">OA运维组提出整体优化方案</td>
+												<td><a href="third_html6_gzxx.html" target="_blank">查看</a></td>
+											</tr>   
+											<tr>                                            
+												<td>
+													<ul class="r-check">
+														<li><input type="checkbox" name="1" />
+														<label ></label></li>
+													</ul>
+												</td>
+												<td>2017-02-23    9:00</td>
+												<td>一般</td>
+												<td class="ms">本周网络故障报修已达10次</td>
+												<td>月网络故障预警</td>
+												<td>王翔</td>
+												<td class="ms">网络运维组针对问题进行专项优化</td>
+												<td><a href="third_html6_gzxx.html" target="_blank">查看</a></td>
+											</tr>   
+											<tr>                                                                                
+												<td>
+													<ul class="r-check">
+														<li><input type="checkbox" name="1" />
+														<label ></label></li>
+													</ul>
+												</td>
+												<td>2017-02-22    8:00</td>
+												<td>一般</td>
+												<td class="ms">本周办公室提交请求已达20次</td>
+												<td>月请求部门预警</td>
+												<td>冯林</td>
+												<td class="ms">请为办公室进行OA新功能培训</td>
+												<td><a href="third_html6_gzxx.html" target="_blank">查看</a></td>
+											</tr>   
+											<tr>                                           
+												<td>
+													<ul class="r-check">
+														<li><input type="checkbox" name="1" />
+														<label ></label></li>
+													</ul>
+												</td>
+												<td>2017-02-22    7:00</td>
+												<td>一般</td>
+												<td class="ms">本周请求处理逾期已达10次</td>
+												<td>月处理逾期预警1</td>
+												<td>冯林</td>
+												<td class="ms">请各服务台人员及时跟踪请求处理情况</td>
+												<td><a href="third_html6_gzxx.html" target="_blank">查看</a></td>
+											</tr>   
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="second_right_page">	
+									<div class="left">
+											<label for="">显示方式</label>
+											<select name="" id="">
+												<option value="">每页5条记录</option>
+												<option value="">每页8条记录</option>
+												<option value="">每页10条记录</option>
+											</select>
+											<label for="">导出</label>
+											<select name="" id="">
+												<option value="">EXCEL格式</option>
+											</select>
+											<a href="#"></a>
+									</div>
+									<div class="right">
+											<div class="feny">
+												<label for="">跳转到第</label>
+												<select name="" id="">
+													<option>1</option>
+												</select>
+												<label for="">页</label>
+											</div>
+											<div class="page">
+												<a class="hs" href="#">上一页</a>
+												<ul>
+													<li><a href="#">1</a></li>
+												</ul>
+												<a class="hs" href="#">下一页</a>
+											</div>
+											
+									</div>
+							</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+
+		<div class="shadow"></div>
+		<!--</div>    -->
+		<script src="js/jquery.1.10.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.spinner.min.js"></script>
+		<script src="js/fileinput.js"></script>
+		<script src="js/selectpick.js"></script>
+		<script src="js/respond.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.navbar-toggle').click(function() {
+						$('.navbar-nav').toggle(200);
+					})
+
+                // body...
+
+				$('.modal-content').draggable();//使弹窗可移动
+                $('.spinner').spinner();
+
+
+				$('.xuan .checkbox>input').click(function () {
+					$(this).parents('.checkbox').addClass('gou').siblings().removeClass('gou');
+				});
+				$('.homeSelect-check .checkbox>input').click(function () {
+					$(this).parents('.checkbox').addClass('gou').siblings().removeClass('gou');
+				});
+
+//				select选择框
+				$("#sel").selectpick({container:'.sel-box',onSelect:function(value,text){
+					// enAble();
+				    }
+				});
+				$("#sel1").selectpick({container:'.sel-box1',onSelect:function(value,text){
+					// enAble();
+				    }
+				});
+
+//				详细信息的复选框
+				$('.r-check li input').click(function () {
+					if ($(this).parents('li').hasClass('gou-active')){
+						$(this).parents('li').removeClass('gou-active');
+					}else{
+						$(this).parents('li').addClass('gou-active');
+					}
+				})
+				$('#datetimepicker').datetimepicker({
+			 	 		language:  'zh-CN',
+			 	 		weekStart: 1,
+				        todayBtn:  1,
+						autoclose: 1,
+						todayHighlight: 1,
+						minView: "month",
+						format: 'yyyy-mm-dd',
+						startView: 2,
+						forceParse: 0,
+				        showMeridian: 1,
+				        pickerPosition: "bottom-left"
+					});
+				$('#datetimepicker1').datetimepicker({
+			 	 		language:  'zh-CN',
+			 	 		weekStart: 1,
+				        todayBtn:  1,
+						autoclose: 1,
+						todayHighlight: 1,
+						minView: "month",
+						format: 'yyyy-mm-dd',
+						startView: 2,
+						forceParse: 0,
+				        showMeridian: 1,
+				        pickerPosition: "bottom-left"
+					});
+			 	 
+			});
+//			取消文件上传插件的Upload按钮
+			$("#inputUp").fileinput({
+				showUpload:false
+			});
+			// 个人信息弹出框JS
+			$(".new-head").click(function(){
+					$(".shadow").fadeIn(300);
+					$("#mynewhead").fadeIn(300);
+			});
+			$(".close1").click(function(){
+					$(".shadow").fadeOut(300);
+					$("#mynewhead").fadeOut(300);
+			});
+			// 结束
+			//左侧导航切换js
+			$(".main_left_nav>li").click(function(){
+				$(this).addClass("active").siblings().removeClass("active");
+				$(this).find("ul").slideDown(300);
+				$(this).siblings().find("ul").slideUp(300);
+			});
+			//左侧导航收缩js
+			$(".cli").click(function(){
+				$(".second_main_left").animate({marginLeft:"-184px"},300);
+				$(".show_btn").animate({marginLeft:"0px"});
+			});
+			$(".show_btn").click(function(){
+				$(".second_main_left").animate({marginLeft:"0"},300);
+				$(".show_btn").animate({marginLeft:"-40px"});
+			});
+			//按钮点选js
+			$(".line_dxk li").click(function(){
+				$(this).addClass("active").siblings().removeClass("active");
+			});
+			//按钮点选js
+			$(".more_select>div ul li").click(function(){
+				$(this).addClass("active").siblings().removeClass("active");
+			});
+		</script>
+	</body>
+
+</html>
