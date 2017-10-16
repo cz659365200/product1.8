@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>维护管理</title>
+    <title>知识库</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/second.css">
-    <link rel="stylesheet" href="css/weihu.css">
     <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,22 +24,36 @@
 		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
     <style>
-        body .head-class .layui-layer-btn a {
-            margin: 0 10px !important;
+        .second_main_right_content>div>div.line1 input[type=button] {
+            width: auto;
+            float: left;
+            height: 30px;
+            line-height: 28px;
+            text-align: center;
+            font-size: 14px;
+            padding-left: 14px;
+            padding-right: 14px;
+            color: #333333;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -moz-border-radius: 5px;
+            font-family: "黑体";
+            background: #438ec6;
+            color: #ffffff;
         }
         
-        body .head-class .layui-layer-btn .layui-layer-btn1 {
-            color: #fff !important;
-            background-color: #286090 !important;
-            border-color: #204d74 !important;
-            letter-spacing: 5px !important;
-            padding-left: 20px !important;
+        .second_main_right_content>div>div {
+            height: 45px;
         }
         
-        body .head-class .layui-layer-btn .layui-layer-btn2 {
-            color: #fff !important;
-            background-color: #5bc0de !important;
-            border-color: #46b8da !important;
+        .second_main_right_content>div>div div.line_dxk1 {
+            width: 50% !important;
+        }
+        
+        .second_table>div table tr {
+            height: 38px !important;
+            /* line-height: 50px; */
         }
     </style>
 </head>
@@ -71,7 +84,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="active" href="#">
+                            <a href="second.html">
                                 <img src="img/icon-02.png" alt="no-img">
                                 <p>维护管理</p>
                             </a>
@@ -89,7 +102,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="second_zs.html">
+                            <a class="active" href="#">
                                 <img src="img/icon-05.png" alt="no-img">
                                 <p>知识库</p>
                             </a>
@@ -385,89 +398,17 @@
         <div class="second_main_left">
             <ul class="main_left_nav">
                 <li>
-                    <a href="second.html">运维请求管理</a>
-                    <ul>
-                        <li><a href="#">处理中(<span>2</span>)</a></li>
-                        <li><a href="#">退回(<span>1</span>)</a></li>
-                        <li><a href="#">完成待评价(<span>1</span>)</a></li>
-                        <li><a href="#">已关闭(<span>8</span>)</a></li>
-                        <li class="active"><a href="#">全部(<span>12</span>)</a></li>
-                    </ul>
+                    <a href="second_zs.html">知识首页</a>
                 </li>
                 <li>
-                    <a href="second_1.html">运维事件管理</a>
-                    <ul>
-                        <li><a href="#">待办理(<span>2</span>)</a></li>
-                        <li><a href="#">处理中(<span>5</span>)</a></li>
-                        <li><a href="#">已升级(<span>1</span>)</a></li>
-                        <li><a href="#">完成待关闭(<span>12</span>)</a></li>
-                        <li><a href="#">已关闭(<span>12</span>)</a></li>
-                        <li class="active"><a href="#">全部(<span>22</span>)</a></li>
-                    </ul>
+                    <a href="second_zs_1.html">分类检索</a>
                 </li>
                 <li>
-                    <a href="second_2.html">运维工单管理</a>
-                    <ul>
-                        <li><a href="#">待执行(<span>2</span>)</a></li>
-                        <li><a href="#">处理中(<span>5</span>)</a></li>
-                        <li><a href="#">已完成(<span>12</span>)</a></li>
-                        <li class="active"><a href="#">全部(<span>19</span>)</li></a>
-                    </ul>
-                    </li>
-                    <li>
-                        <a href="second_3.html">运维变更管理</a>
-                        <ul>
-                            <li><a href="#">待提交(<span>1</span>)</a></li>
-                            <li><a href="#">待审核(<span>1</span>)</a></li>
-                            <li><a href="#">审核未通过(<span>2</span>)</a></li>
-                            <li><a href="#">处理中(<span>2</span>)</a></li>
-                            <li><a href="#">变更完成(<span>3</span>)</a></li>
-                            <li><a href="#">退回关闭(<span>1</span>)</a></li>
-                            <li class="active"><a href="#">全部(<span>10</span>)</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="second_4.html">工作计划管理</a>
-                        <ul>
-                            <li><a href="#">单次计划(<span>2</span>)</a></li>
-                            <li><a href="#">循环计划(<span>5</span>)</a></li>
-                            <li><a href="#">已过期计划(<span>12</span>)</a></li>
-                            <li class="active"><a href="#">全部(<span>19</span>)</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="second_5.html">合同执行管理</a>
-                        <ul>
-                            <li><a href="#">待执行(<span>2</span>)</a></li>
-                            <li><a href="#">执行中(<span>6</span>)</a></li>
-                            <li><a href="#">已完成(<span>2</span>)</a></li>
-                            <li class="active"><a href="#">全部(<span>10</span>)</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="second_6.html">开发进度管理</a>
-                        <ul>
-                            <li><a href="#">待执行(<span>2</span>)</a></li>
-                            <li><a href="#">开发中(<span>6</span>)</a></li>
-                            <li><a href="#">已完成(<span>2</span>)</a></li>
-                            <li class="active"><a href="#">全部(<span>10</span>)</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="second_7.html">维护公司管理</a>
-                        <ul>
-                            <li><a href="#">中心驻场(<span>3</span>)</a></li>
-                            <li><a href="#">其他运维(<span>6</span>)</a></li>
-                            <li><a href="#">全部(<span>9</span>)</a></li>
-                        </ul>
-                    </li>
-                    <li class="active">
-                        <a href="second_8.html">通知提醒管理</a>
-                        <ul style="display: block;">
-                            <li class="active"><a href="#">通知公告(<span>3</span>)</a></li>
-                            <li><a href="second_8_1.html">系统提醒(<span>2</span>)</a></li>
-                        </ul>
-                    </li>
+                    <a href="second_zs_2.html">我的知识</a>
+
+                </li>
+                <li class="active"><a href="#">收藏知识</a></li>
+
             </ul>
             <a class="cli"></a>
         </div>
@@ -477,46 +418,61 @@
                 <div class="second_main_right_content">
                     <div class="right_content1">
                         <div class="line1">
-                            <div class="line_dxk">
-                                <label for="">状&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp态</label>
+                            <div class="line_dxk1" style="margin-top:15px;">
+
+                                <label for="">知识类型</label>
                                 <ul>
-                                    <li class="active">全部</li>
-                                    <li>发布中</li>
-                                    <li>已过期</li>
+                                    <li class="active">不限</li>
+                                    <li>技术经验</li>
+                                    <li>方案分享</li>
+                                    <li>工作技巧</li>
+                                    <li>心得体会</li>
+                                    <li>技术标准</li>
                                 </ul>
                             </div>
-                            <input type="text" placeholder="通知标题、发布人" maxlength="15" />
+                            <input type="text" placeholder="可输入编号、标题、描述、作者来源" maxlength="15" />
                             <input type="button" name="" value="搜&nbsp&nbsp&nbsp索">
                         </div>
                         <div class="line1">
-                            <div class="line_dxk m_top">
-                                <label for="">更新时间</label>
+                            <div class="line_dxk1 ">
+
+                                <label for="">知识分类</label>
                                 <ul>
-                                    <li class="active">全部</li>
-                                    <li>今日</li>
-                                    <li>本周</li>
-                                    <li>本月</li>
+                                    <li class="active">不限</li>
                                 </ul>
+                                <input type="button" name="" style="margin-left:15px" value="选择">
                             </div>
-                            <div class="data_sjc input-append date form_datetime">
-                                <div id="datetimepicker" class="input-group date form_datetime data_sjc_box">
-                                    <input class="form-control" size="16" type="text" placeholder="起始时间">
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
-                                </div>
-                                <label for="">至</label>
-                                <div id="datetimepicker1" class="input-group date form_datetime data_sjc_box">
-                                    <input class="form-control" size="16" type="text" placeholder="终止时间">
-                                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
-                                </div>
+
+                        </div>
+                        <div class="line1">
+                            <div class="line_dxk1 ">
+
+                                <label for="">部&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp门</label>
+                                <ul>
+                                    <li class="active">不限</li>
+                                </ul>
+                                <input type="button" name="" style="margin-left:15px" value="选择">
                             </div>
+
+                        </div>
+                        <div class="line1">
+                            <div class="line_dxk m_top">
+
+                                <label for="">排&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp序</label>
+                                <ul>
+                                    <li class="active">最新更新</li>
+                                    <li>最新评论</li>
+                                    <li>浏览量</li>
+                                    <li>最新精华</li>
+                                </ul>
+
+                            </div>
+
                         </div>
                     </div>
-                    <div class="second_btn_box">
-                        <a href="#" class="add-com_btn">添加通知</a>
-                        <!-- <a href="#">导出模板</a>
-								<a href="#">导入数据</a> -->
-                    </div>
-                    <div class="second_table" style="height: 455px;">
+
+                    <!-- 表格部分 -->
+                    <div class="second_table" style="height:420px">
                         <div>
                             <table>
                                 <thead>
@@ -527,12 +483,13 @@
                                                     <label></label></li>
                                             </ul>
                                         </th>
-                                        <th width="8%">通知标题</th>
-                                        <th>发布时间</th>
-                                        <th>发布人</th>
-                                        <th width="8%">通知范围</th>
-                                        <th width="45%">通知内容</th>
-                                        <th>状态</th>
+                                        <th width="10%">编号</th>
+                                        <th width="15%">标题</th>
+                                        <th>分类</th>
+                                        <th>作者</th>
+                                        <th>更新时间</th>
+                                        <th>知识类型</th>
+                                        <th>浏览量</th>
                                         <th>操作</th>
                                     </tr>
                                 </thead>
@@ -544,13 +501,17 @@
                                                     <label></label></li>
                                             </ul>
                                         </td>
-                                        <td>OA故障</td>
-                                        <td>2017-02-01 9:00</td>
-                                        <td>张三</td>
-                                        <td>全体用户</td>
-                                        <td>OA数据库故障，目前全网都无法登陆，预计10点恢复，请大家知晓 </td>
-                                        <td>发布中</td>
-                                        <td><a href="#" class="change-com_btn">修改</a><a href="#">取消置顶</a></td>
+                                        <td class="bh">KB20170621001</td>
+                                        <td>肉品电子结算软件进行…</td>
+                                        <td>技术/食品追溯技术</td>
+                                        <td>张卓</td>
+                                        <td>2017-06-21 17:51:33</td>
+                                        <td></td>
+                                        <td>0</td>
+                                        <!-- <td><a href="fuwu.html" target="_blank">评价</a></td> -->
+                                        <td><a href="third_html4_zsck.html" target="_blank">查看</a>
+                                            <a>取消收藏</a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -559,13 +520,16 @@
                                                     <label></label></li>
                                             </ul>
                                         </td>
-                                        <td>OA故障</td>
-                                        <td>2017-02-01 9:00</td>
-                                        <td>张三</td>
-                                        <td>全部运维人员</td>
-                                        <td>OA数据库故障，目前全网都无法登陆，预计10点恢复，请大家知晓 </td>
-                                        <td>发布中</td>
-                                        <td><a href="#">修改</a><a href="#">置顶</a></td>
+                                        <td class="bh">KB20170613008</td>
+                                        <td>各类追溯软件数据导出…</td>
+                                        <td>技术/食品追溯技术</td>
+                                        <td>张卓</td>
+                                        <td>2017-06-21 17:51:33</td>
+                                        <td>技术经验</td>
+                                        <td>0</td>
+                                        <td><a href="third_html4_zsck.html" target="_blank">查看</a>
+                                            <a>取消收藏</a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -574,15 +538,89 @@
                                                     <label></label></li>
                                             </ul>
                                         </td>
-                                        <td>OA故障</td>
-                                        <td>2017-02-01 9:00</td>
-                                        <td>张三</td>
-                                        <td>全体用户</td>
-                                        <td>OA数据库故障，目前全网都无法登陆，预计10点恢复，请大家知晓 </td>
-                                        <td>发布中</td>
-                                        <td><a href="#" class="check-com_btn">查看</a></td>
+                                        <td class="bh">KB20170613010</td>
+                                        <td>团体采购软件常见故障…</td>
+                                        <td>技术/食品追溯技术</td>
+                                        <td>徐亚军 </td>
+                                        <td>2017-06-21 17:51:33</td>
+                                        <td>技术经验</td>
+                                        <td>0</td>
+                                        <td><a href="third_html4_zsck.html" target="_blank">查看</a>
+                                            <a>取消收藏</a>
+                                        </td>
                                     </tr>
-
+                                    <tr>
+                                        <td>
+                                            <ul class="r-check">
+                                                <li><input type="checkbox" name="1" />
+                                                    <label></label></li>
+                                            </ul>
+                                        </td>
+                                        <td class="bh">KB20170527006</td>
+                                        <td>SQLserver2008R2数据…</td>
+                                        <td>技术/数据库/MSSQLSERVER</td>
+                                        <td>张卓</td>
+                                        <td>2017-06-21 17:51:33</td>
+                                        <td>技术经验</td>
+                                        <td>0</td>
+                                        <td><a href="third_html4_zsck.html" target="_blank">查看</a>
+                                            <a>取消收藏</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <ul class="r-check">
+                                                <li><input type="checkbox" name="1" />
+                                                    <label></label></li>
+                                            </ul>
+                                        </td>
+                                        <td class="bh">KB20170527006</td>
+                                        <td>SQLserver2008R2数据…</td>
+                                        <td>技术/数据库/MSSQLSERVER</td>
+                                        <td>章俊1</td>
+                                        <td>2017-06-21 17:51:33</td>
+                                        <td>技术经验</td>
+                                        <td>0</td>
+                                        <td><a href="third_html4_zsck.html" target="_blank">查看</a>
+                                            <a>取消收藏</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <ul class="r-check">
+                                                <li><input type="checkbox" name="1" />
+                                                    <label></label></li>
+                                            </ul>
+                                        </td>
+                                        <td class="bh">KB20170617001</td>
+                                        <td>托利多电子秤秤时间不…</td>
+                                        <td>技术/食品追溯技术</td>
+                                        <td>周维辰</td>
+                                        <td>2017-06-21 17:51:33</td>
+                                        <td>技术经验</td>
+                                        <td>0</td>
+                                        <td><a href="third_html4_zsck.html" target="_blank">查看</a>
+                                            <a>取消收藏</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <ul class="r-check">
+                                                <li><input type="checkbox" name="1" />
+                                                    <label></label></li>
+                                            </ul>
+                                        </td>
+                                        <td class="bh">KB20170621001</td>
+                                        <td>肉品电子结算软件进行…</td>
+                                        <td>技术/食品追溯技术</td>
+                                        <td>张卓</td>
+                                        <td>2017-06-21 17:51:33</td>
+                                        <td>技术经验</td>
+                                        <td>0</td>
+                                        <td><a href="third_html4_zsck.html" target="_blank">查看</a>
+                                            <a>取消收藏</a>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -591,9 +629,7 @@
                         <div class="left">
                             <label for="">显示方式</label>
                             <select name="" id="">
-												<option value="">每页5条记录</option>
 												<option value="">每页8条记录</option>
-												<option value="">每页10条记录</option>
 											</select>
                             <label for="">导出</label>
                             <select name="" id="">
@@ -633,7 +669,6 @@
     <script src="js/jquery.spinner.min.js"></script>
     <script src="js/fileinput.js"></script>
     <script src="js/selectpick.js"></script>
-    <script src="layer/layer.js"></script>
     <script src="js/respond.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
     <script type="text/javascript" src="js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
@@ -721,11 +756,11 @@
         });
         // 结束
         //左侧导航切换js
-        // $(".main_left_nav>li").click(function(){
-        // 	$(this).addClass("active").siblings().removeClass("active");
-        // 	$(this).find("ul").slideDown(300);
-        // 	$(this).siblings().find("ul").slideUp(300);
-        // });
+        $(".main_left_nav>li").click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+            $(this).find("ul").slideDown(300);
+            $(this).siblings().find("ul").slideUp(300);
+        });
         //左侧导航收缩js
         $(".cli").click(function() {
             $(".second_main_left").animate({
@@ -744,51 +779,12 @@
             });
         });
         //按钮点选js
-        $(".line_dxk li").click(function() {
+        $(".line_dxk1 li,.line_dxk li").click(function() {
             $(this).addClass("active").siblings().removeClass("active");
         });
         //按钮点选js
         $(".more_select>div ul li").click(function() {
             $(this).addClass("active").siblings().removeClass("active");
-        });
-        $(".add-com_btn").click(function() {
-            var index = layer.open({
-                title: "添加通知公告",
-                type: 2,
-                area: ['490px', '420px'],
-                btn: ['发布', '取消'],
-                btnAlign: 'c',
-                closeBtn: 1,
-                shadeClose: true,
-                skin: 'head-class',
-                content: 'weihu_layer1.html'
-            });
-        });
-        $(".change-com_btn").click(function() {
-            var index = layer.open({
-                title: "修改通知公告",
-                type: 2,
-                area: ['490px', '420px'],
-                btn: ['更新', '设为过期', '取消'],
-                btnAlign: 'c',
-                closeBtn: 1,
-                shadeClose: true,
-                skin: 'head-class',
-                content: 'weihu_layer1.html'
-            });
-        });
-        $(".check-com_btn").click(function() {
-            var index = layer.open({
-                title: "查看通知公告",
-                type: 2,
-                area: ['490px', '420px'],
-                btn: ['关闭 '],
-                btnAlign: 'c',
-                closeBtn: 1,
-                shadeClose: true,
-                skin: 'head-class',
-                content: 'weihu_layer2.html'
-            });
         });
     </script>
 </body>

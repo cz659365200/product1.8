@@ -429,3 +429,63 @@
 .second_table>div table tbody tr td a.link:hover {
     color: #0079b7
 }
+
+
+/* 请求页面 */
+
+.r-con-left .tab_box>div div.line4 {
+    margin: 15px auto;
+}
+
+.r-con-left .tab_box>div div.line6 input.match_btn {
+    background: #0aa5df;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.serve-operator {
+    width: 10%;
+}
+
+.serve-message {
+    width: 65%;
+}
+
+.request-advice textarea {
+    height: 180px;
+}
+
+.qr_choice {
+    float: left;
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.qr_choice li {
+    float: left;
+    overflow: hidden;
+    margin-right: 25px;
+}
+
+.qr_choice li a {
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    line-height: 48px;
+    border: 1px solid #7dd1f1;
+    margin-right: 7px;
+    margin-top: 15px;
+}
+
+.qr_choice li a.cur {
+    background: url(../img/gou-07.jpg) no-repeat;
+}
+
+.qr_choice li p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 48px;
+    float: left;
+    color: #0da6e0;
+}

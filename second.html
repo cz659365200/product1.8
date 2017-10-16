@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/second.css">
     <link rel="stylesheet" href="css/weihu.css">
+    <link rel="stylesheet" href="css/second_list.css">
     <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -363,21 +364,159 @@
         </div>
 
     </div>
+
+    <!--工单处理人选择弹出框-->
+    <!--  模态框（Modal）  -->
+    <div class="gdperchoice_box modal fade" id="myModal-gdperchoice" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog gdperchoice">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close1" data-dismiss="modal" aria-hidden="true">
+                                <img src="img/title_img.png" alt="no" />
+                            </button>
+                    <h4 class="modal-title" id="">
+                        处理人选择
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form style="margin:0 ;padding:0">
+                        <div class="gdperchoice_left">
+                            <h3>组织结构</h3>
+                            <div class="zz_box"></div>
+                        </div>
+                        <div class="gdperchoice_right">
+                            <div class="gdperchoice_right_search">
+                                <h3>搜&nbsp&nbsp索</h3>
+                                <input type="text" placeholder="姓名、部门、电话、手机" / maxlength="25">
+                                <button></button>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="gdperchoice_right_tb_box">
+                                <div class="gdperchoice_right_tb">
+                                    <table>
+                                        <thead>
+                                            <th>姓名</th>
+                                            <th>部门</th>
+                                            <th>电话</th>
+                                            <th>手机</th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>赵恒平</td>
+                                                <td>上海分/软件一部</td>
+                                                <td>9729</td>
+                                                <td>13219019010</td>
+                                                <td>
+                                                    <a href="#">选择</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>严敏</td>
+                                                <td>上海分/软件一部</td>
+                                                <td>9729</td>
+                                                <td>13219019010</td>
+                                                <td>
+                                                    <a href="#">选择</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>李仡</td>
+                                                <td>上海分/软件一部</td>
+                                                <td>9729</td>
+                                                <td>13219019010</td>
+                                                <td>
+                                                    <a href="#">选择</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>徐璐</td>
+                                                <td>上海分/软件一部</td>
+                                                <td>9729</td>
+                                                <td>13219019010</td>
+                                                <td>
+                                                    <a href="#">选择</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>滕树宝</td>
+                                                <td>上海分/软件一部</td>
+                                                <td>9729</td>
+                                                <td>13219019010</td>
+                                                <td>
+                                                    <a href="#">选择</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>赵恒平</td>
+                                                <td>上海分/软件一部</td>
+                                                <td>9729</td>
+                                                <td>13219019010</td>
+                                                <td>
+                                                    <a href="#">选择</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                    <div class="fenpage">
+                                        <a class="before" href="#">
+                                            <</a>
+                                                <ul>
+                                                    <li><a class="active" href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#">6</a></li>
+                                                </ul>
+                                                <a href="#" class="next">></a>
+
+                                    </div>
+                                </div>
+                                <div class="xzry">
+                                    <label for="">选中人员</label>
+                                    <div>
+                                        <p>金三胖</p>
+                                        <a href="#">X</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary rad">
+                                    确定
+                                </button>
+                    <button type="button" class="btn btn-info rad  close1" data-dismiss="modal">
+                                    取消
+                                </button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+
+            <!-- /.modal -->
+        </div>
+
+        <!--<div >-->
+
+    </div>
     <div class="second_main">
         <div class="second_main_left">
             <ul class="main_left_nav">
                 <li class="active">
-                    <a href="#">服务评价管理</a>
+                    <a href="#">运维请求管理</a>
                     <ul style="display: block;">
                         <li><a href="#">处理中(<span>2</span>)</a></li>
                         <li><a href="#">退回(<span>1</span>)</a></li>
-                        <li><a href="#">完成待评价(<span>1</span>)</a></li>
+                        <li><a href="#">确认与评价(<span>1</span>)</a></li>
                         <li><a href="#">已关闭(<span>8</span>)</a></li>
                         <li class="active"><a href="#">全部(<span>12</span>)</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="second_1.html">运维请求管理</a>
+                    <a href="second_1.html">运维事件管理</a>
                     <ul>
                         <li><a href="#">待办理(<span>2</span>)</a></li>
                         <li><a href="#">处理中(<span>5</span>)</a></li>
@@ -457,8 +596,7 @@
                                 <ul>
                                     <li class="active">全部</li>
                                     <li>处理中</li>
-                                    <li>退回</li>
-                                    <li>完成待评价</li>
+                                    <li>确认与评价</li>
                                     <li>已关闭</li>
                                 </ul>
                             </div>
@@ -471,10 +609,9 @@
                                 <ul>
                                     <li class="active">全部</li>
                                     <li>今日</li>
-                                    <li>最近7天</li>
                                     <li>本周</li>
-                                    <li>最近30天</li>
                                     <li>本月</li>
+                                    <li>本年</li>
                                 </ul>
                             </div>
                             <div class="data_sjc input-append date form_datetime">
@@ -488,41 +625,120 @@
                                     <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
                                 </div>
                             </div>
+                            <input type="button" name="" class="ad_btn">
                         </div>
                     </div>
-                    <!-- <div class="more_select">
-								<div>
-									<label for="">请求人部门</label>
-									<a href="">选择</a>
-									<p>请求人</p>
-								</div>
-								<div>
-									<label for="">请求人</label>
-									<a href="">选择</a>
-									<p>请求人</p>
-								</div>
-								<div>
-									<label for="">请求创建人</label>
-									<a href="">选择</a>
-									<p>请求人</p>
-								</div>
-								<div>
-									<label for="">服务目录</label>
-									<a href="">选择</a>
-									<p>请求人</p>
-								</div>
-								<div>
-									<label for="">是否补录</label>
-									<ul>
-										<li class="active">不限</li>
-										<li>是</li>
-										<li>否</li>
-									</ul>
-								</div>
-							</div> -->
-                    <div class="second_btn_box">
-                        <a href="shijian.html" target="_blank">发起请求</a>
+                    <div class="advanced_search">
+                        <div class="ad_title">
+                            <h3>事件高级搜索</h3>
+                            <div class="ad_sear">
+                                <a></a>
+                                <label for="">默认下拉打开</label>
+                            </div>
+                        </div>
+                        <div class="ad_content">
+                            <div class="ad_row">
+                                <div class="input_box">
+                                    <label for="">请求部门</label>
+                                    <div class="input-group sjfl_box">
+                                        <input type="text" placeholder="可输入可选择" maxlength="15" />
+                                        <a class="xbtn" id="sjfl">选&nbsp&nbsp&nbsp择</a>
+                                        <div id="xz_box" style="display: none;"></div>
+                                    </div>
+                                </div>
+                                <div class="input_box">
+                                    <label for="">服务目录</label>
+                                    <div>
+                                        <input type="text" placeholder="可输入可选择" maxlength="15">
+                                        <a class="menu_btn">选&nbsp&nbsp&nbsp择</a>
+                                    </div>
+                                </div>
+                                <div class="input_box">
+                                    <label for="">请求人</label>
+                                    <div>
+                                        <input type="text" placeholder="可输入可选择" maxlength="15">
+                                        <a data-toggle="modal" data-target="#myModal-gdperchoice">选&nbsp&nbsp&nbsp择</a>
+                                    </div>
+                                </div>
+                                <div class="input_box">
+                                    <label for="">创建人</label>
+                                    <div>
+                                        <input type="text" placeholder="可输入可选择" maxlength="15">
+                                        <a data-toggle="modal" data-target="#myModal-gdperchoice">选&nbsp&nbsp&nbsp择</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ad_row">
+                                <div class="input_box">
+                                    <label for="">电话/手机</label>
+                                    <div>
+                                        <input type="text" placeholder="可输入可选择" maxlength="15" style="width:100%">
+                                    </div>
+                                </div>
+                                <div class="radio_box">
+                                    <label for="">请求评价</label>
+                                    <ul>
+                                        <li>
+                                            <a></a>
+                                            <p>五星(100)</p>
+                                        </li>
+                                        <li>
+                                            <a></a>
+                                            <p>四星(80)</p>
+                                        </li>
+                                        <li>
+                                            <a></a>
+                                            <p>三星(60)</p>
+                                        </li>
+                                        <li>
+                                            <a></a>
+                                            <p>二星(40)</p>
+                                        </li>
+                                        <li>
+                                            <a></a>
+                                            <p>一星(20)</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ad_row">
+                                <div class="radio_box">
+                                    <label for="">是否补录</label>
+                                    <ul>
+                                        <li>
+                                            <a></a>
+                                            <p>是</p>
+                                        </li>
+                                        <li>
+                                            <a></a>
+                                            <p>否</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="radio_box">
+                                    <label for="">是否超时</label>
+                                    <ul>
+                                        <li>
+                                            <a></a>
+                                            <p>是</p>
+                                        </li>
+                                        <li>
+                                            <a></a>
+                                            <p>否</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ad_btnbox">
+                                <a>设为默认</a>
+                                <a>查询结果</a>
+                                <a>清空条件</a>
+                            </div>
+                        </div>
                     </div>
+                    <!-- <div class="second_btn_box">
+                        <a href="shijian.html" target="_blank">发起请求</a>
+                    </div> -->
                     <div class="second_table">
                         <div>
                             <table>
@@ -699,6 +915,7 @@
     <script src="js/fileinput.js"></script>
     <script src="js/selectpick.js"></script>
     <script src="js/respond.min.js"></script>
+    <script src="layer/layer.js"></script>
     <script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
     <script type="text/javascript" src="js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
     <script type="text/javascript">
@@ -811,9 +1028,47 @@
         $(".line_dxk li").click(function() {
             $(this).addClass("active").siblings().removeClass("active");
         });
-        //按钮点选js
-        $(".more_select>div ul li").click(function() {
-            $(this).addClass("active").siblings().removeClass("active");
+
+        // 高级搜索
+
+        $(".ad_btn").on("click", function() {
+            $(".advanced_search").slideToggle();
+        });
+        $(".ad_sear a").click(function() {
+            $(this).toggleClass("active");
+        });
+        $(".radio_box li a").click(function() {
+            $(this).addClass("active").parent().siblings().find("a").removeClass("active");
+        });
+        $("#sjfl").click(function() {
+            $("#xz_box").slideDown();
+            // $("#xz_box1").slideUp();
+            event.stopPropagation();
+        });
+        $("#xz_box").click(function(event) {
+            //$("#xz_box").slideDown();
+            event.stopPropagation();
+        });
+        $(".second_main_right_content").click(function() {
+            $("#xz_box").slideUp();
+        });
+        $(".sjfl_box>input").click(function(event) {
+            //$("#xz_box").slideDown();
+            event.stopPropagation();
+        });
+        //服务目录选择弹窗
+
+
+        $(".menu_btn").click(function() {
+            var index = layer.open({
+                title: "服务目录",
+                type: 2,
+                area: ['580px', '330px'],
+                closeBtn: 1,
+                shadeClose: true,
+                skin: 'head-class',
+                content: 'indexlayer1.html'
+            });
         });
     </script>
 </body>

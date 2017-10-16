@@ -1,0 +1,358 @@
+/* 三级页面头部按钮样式修改 */
+
+.event_list2 {
+    min-height: 55px;
+}
+
+.event_list2>div>div.event_list2_inner2 a {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.list {
+    margin: 25px 0;
+}
+
+.left-list-01 {
+    border: 1px solid #99d9f3 !important;
+}
+
+.tab_menu {
+    float: none !important;
+}
+
+.zs_title {
+    float: right;
+    overflow: hidden;
+    line-height: 38px;
+    margin-right: 10px;
+}
+
+.zs_title label {
+    font-family: "黑体";
+    color: #006bae;
+    font-size: 16px;
+    float: left;
+    margin-right: 10px;
+}
+
+.zs_title p {
+    font-family: "黑体";
+    color: #006bae;
+    font-size: 16px;
+    float: left;
+    min-width: 100px;
+    text-decoration: underline;
+}
+
+.zs_title span {
+    font-family: "黑体";
+    color: #ea1a1a;
+    font-size: 16px;
+    float: left;
+    font-weight: 700;
+    display: block;
+    text-decoration: underline;
+    /* border-bottom: 1px solid #ea1a1a; */
+}
+
+.zs_content {
+    width: 100%;
+    border-bottom: 1px solid #99d9f3;
+    padding: 30px 0 20px 0;
+    background: -webkit-linear-gradient(top, #f2f9fd, #ffffff);
+    background: -moz-linear-gradient(top, #f2f9fd, #ffffff);
+    background: -ms-linear-gradient(top, #f2f9fd, #ffffff);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f2f9fd', endColorstr='#ffffff', grandientType=0);
+}
+
+
+}
+#sjfl {
+    background: #00b5b1;
+    float: left;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    margin-left: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: none;
+}
+.zs_content>div {
+    height: 30px;
+    width: 90%;
+    margin: 10px auto;
+    line-height: 30px;
+}
+.zs_content>div>label {
+    float: left;
+    color: #000000;
+    width: 70px;
+}
+.zs_content>div>p {
+    float: left;
+    color: #666666;
+}
+.zs_content>div input {
+    float: left;
+    width: 220px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #dddddd;
+    margin-top: 2px;
+    text-indent: 10px;
+}
+.zs_content>div a.xbtn {
+    width: 68px;
+    height: 28px;
+    background: #00b5b1;
+    font-size: 16px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    behavior: url(PIE.htc);
+    float: left;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.zs_content>div a.tbtn {
+    width: 98px;
+    height: 32px;
+    background: #00a1de;
+    font-size: 16px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    behavior: url(PIE.htc);
+    float: left;
+    margin: 0;
+}
+.zs_content>div a.like {
+    width: 72px;
+    height: 28px;
+    display: block;
+    float: right;
+    background: url(../img/like.png) no-repeat;
+}
+.zs_content>div a.comment {
+    width: 105px;
+    height: 28px;
+    display: block;
+    float: right;
+    background: url(../img/comment.png) no-repeat;
+}
+.zs_content>div span {
+    float: right;
+    margin-left: 10px;
+}
+.zs_content>div textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid #dddcdd;
+}
+.zs_content>div div.zs_ct {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+.zs_content>div div.zs_ct label {
+    float: left;
+    color: #000000;
+    width: 70px;
+}
+.zs_content>div div.zs_ct p {
+    float: left;
+    color: #000000;
+}
+.zs_content>div .sel-box1 {
+    float: left;
+}
+.zs_content>div .sel-box1 .selectpick_div {
+    width: 220px !important;
+    height: 28px !important;
+    line-height: 28px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    text-align: left;
+    font-size: 14px;
+    color: #333333;
+    text-indent: 5px
+}
+.zs_content>div .sel-box1 .selectpick_div span#selectpick_span_sel1 {
+    float: left;
+    margin-left: 5px;
+}
+.zs_content>div .sel-box1 .selectpick_icon {
+    float: right;
+    background: url(../img/bottom.png) no-repeat center;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+.zs_content>div .sel-box1 .selectpick_options {
+    width: 220px !important;
+    text-indent: 6px;
+    top: 27px !important;
+}
+.zs_content>div .sel-box1 ul {
+    float: none;
+}
+.zs_content>div .sel-box1 li {
+    float: none;
+    text-align: left;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    padding-left: 5px;
+}
+.zs_content>div .sel-box1 li label {
+    float: none;
+    margin: 0;
+}
+.zs_content>div .sel-box1 .selectpick_options ul li.selectpick_options_selected,
+.selectpick_options li:hover {
+    background-color: #36b1e6;
+}
+.zs_right {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 30px;
+}
+.zs_right dd,
+.zs_right dt {
+    float: left;
+    margin-left: 15px;
+}
+.zs_right dt {
+    width: 60%;
+}
+.zs_right dd a img {
+    width: 101px;
+}
+.zs_right dt div {
+    overflow: hidden;
+}
+.zs_right dt div label,
+.zs_right dt div p {
+    float: left;
+    margin: 0;
+    margin-right: 10px;
+}
+.zs_right dt div p {
+    min-width: 50px;
+}
+.zs_right>div {
+    overflow: hidden;
+    width: 85%;
+    margin: 10px auto;
+    line-height: 30px;
+}
+.zs_right>div label {
+    float: left;
+    margin: 0;
+    margin-right: 25px;
+}
+.zs_right>div p {
+    float: left;
+}
+.zs_right>div a.favorite {
+    width: 120px;
+    height: 28px;
+    display: block;
+    margin: 0 auto;
+    background: url(../img/favorite.png) no-repeat;
+}
+
+/* 评论内容 */
+.pl_box {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.pl_box li {
+    width: 100%;
+    overflow: hidden;
+    height: 65px;
+    border: 1px solid #c9c8c3;
+    padding: 1px;
+    background: #ffffff;
+    margin-bottom: 8px;
+}
+.pl_box li div.fl {
+    float: left;
+    width: 28%;
+    height: 100%;
+    background: #fdf3da;
+}
+.pl_box li div.rl {
+    height: 61px;
+    overflow: hidden;
+    float: right;
+    width: 72%;
+}
+.pl_box li div.fl>div {
+    overflow: hidden;
+}
+.pl_box li div.fl img {
+    display: block;
+    float: left;
+    margin: 12px 14px 0 14px;
+}
+.pl_box li div.fl label {
+    display: block;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.pl_box li div.fl>div p {
+    margin: 0 0 0 15px;
+}
+.pl_box li div.rl p {
+    margin: 5px 0 0 5px;
+    float: left;
+}
+.pl_box li div.rl a {
+    float: right;
+    display: block;
+    width: 29px;
+    height: 26px;
+    background: url(../img/right_cancel.jpg) no-repeat;
+}
+.fj_text {
+    margin-top: 5px;
+    padding: 0;
+}
+.fj_text li {
+    overflow: hidden;
+    line-height: 32px;
+}
+.fj_text li p {
+    float: left;
+    margin-right: 20px;
+}
+.fj_text li a {
+    float: left;
+    margin-left: 15px;
+}

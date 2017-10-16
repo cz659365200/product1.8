@@ -92,3 +92,137 @@
 .right_list>li dl dt a:hover {
     background: #068cbf;
 }
+
+
+/* 新增按钮 */
+
+.top_btn {
+    overflow: hidden;
+    width: 100%;
+}
+
+.top_btn a {
+    display: block;
+    padding: 0 25px;
+    height: 30px;
+    line-height: 28px;
+    color: #ffffff;
+    border: 1px solid #aad5eb;
+    text-align: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    background: #068cbf;
+    font-size: 16px;
+    float: left;
+    margin-right: 10px;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 15px;
+    left: 5px;
+    margin: 0 0 !important;
+}
+
+
+/* 普通用户首页 */
+
+.request_list {
+    width: 100%;
+}
+
+.request_list li {
+    overflow: hidden;
+    border-bottom: 1px solid #d4f0fb !important;
+    border-top: none !important;
+}
+
+.request_list li>div,
+.request_list li>dl {
+    width: 100%;
+    overflow: hidden;
+}
+
+.request_list li>div {
+    line-height: 24px;
+}
+
+.request_list li>div span {
+    color: #0ca6e0;
+    display: block;
+    float: left;
+    font-size: 16px;
+    margin-right: 0 !important;
+}
+
+.request_list li>div>label {
+    color: #0ca6e0;
+    display: block;
+    float: left;
+    font-size: 16px;
+}
+
+.request_list li>div p {
+    color: #0ca6e0 !important;
+    float: left;
+    margin-left: 15px;
+    font-size: 16px;
+    width: 150px !important;
+}
+
+.request_list li>dl dd,
+.request_list li>dl dt {
+    float: left;
+    width: 50%;
+}
+
+.request_list li>dl dd>div {
+    width: 100%;
+    overflow: hidden;
+}
+
+.request_list li>dl dd>div label,
+.request_list li>dl dd>div p {
+    float: left;
+    color: #000000;
+    font-weight: normal
+}
+
+.request_list li>dl dd>div p {
+    margin-right: 50px;
+    width: auto !important;
+}
+
+.request_list li>dl dt p {
+    color: #0ca6e0;
+    font-size: 16px;
+    float: left;
+}
+
+.request_list li>dl dt button {
+    color: #FFFFFF;
+    font-size: 16px;
+    float: right;
+    width: 128px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    background: #00bae9;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border: none;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+.request_list li>dl dt.dqr p {
+    color: #00b5b1;
+}
+
+.request_list li>dl dt.dqr button {
+    background: #00b5b1;
+}

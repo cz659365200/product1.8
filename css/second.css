@@ -572,96 +572,6 @@ h3 {
 }
 
 
-/*更多筛选部分*/
-
-.more_select {
-    width: 100%;
-    height: 58px;
-    background: -webkit-linear-gradient(top, #d8f7fe, #eafbff);
-    background: -moz-linear-gradient(top, #d8f7fe, #eafbff);
-    background: -ms-linear-gradient(top, #d8f7fe, #eafbff);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d8f7fe', endColorstr='#eafbff', grandientType=0);
-    border-top: 1px solid #aad5eb;
-    border-bottom: 1px solid #aad5eb;
-}
-
-.more_select>div {
-    float: left;
-    width: 18% !important;
-    margin: 10px 5px;
-}
-
-.more_select>div:last-child {
-    width: 22% !important;
-}
-
-.more_select>div label {
-    float: left;
-    color: #006bae;
-    font-weight: bold;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 5px;
-    font-size: 14px;
-}
-
-.more_select>div a {
-    display: block;
-    float: left;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    background: #00a1de;
-    font-size: 14px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #ffffff;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -moz-border-radius: 5px;
-}
-
-.more_select>div p {
-    float: left;
-    width: 25%;
-    height: 30px;
-    line-height: 30px;
-    margin-left: 5px;
-    font-size: 14px;
-    color: #006bae;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.more_select>div ul {
-    float: left;
-    overflow: hidden;
-}
-
-.more_select>div ul li {
-    float: left;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    font-size: 14px;
-    color: #006bae;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -moz-border-radius: 5px;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.more_select>div ul li.active {
-    border: 2px solid #00a1de;
-}
-
-
 /*表格上当按钮栏*/
 
 .second_btn_box {
@@ -696,7 +606,7 @@ h3 {
 }
 
 .second_table {
-    height: 455px;
+    height: 450px;
     border-bottom: 1px solid #999999;
     /*
     position: relative;*/
@@ -1127,7 +1037,7 @@ h3 {
 
 .zs_content>div {
     width: 49.5%;
-    height: 348px;
+    height: 315px;
     border: 1px solid #aad5eb;
     float: left;
     margin-top: 10px;
@@ -1233,9 +1143,13 @@ h3 {
 }
 
 .zs_content>div ul li p {
-    width: 45px;
+    width: 75px;
     margin-left: 15px;
     margin-bottom: 0;
+}
+
+.zs_tb {
+    margin: 10px 0 0 5px;
 }
 
 

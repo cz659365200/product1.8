@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>服务目录_弹窗</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--文件上传插件-->
+    <link rel="stylesheet" href="css/fileinput.min.css" media="all" type="text/css">
+    <link rel="stylesheet" href="css/selectpick.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/third.css">
+    <link rel="stylesheet" href="css/second.css">
+    <link rel="stylesheet" href="css/project_index.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <style>
+        .tjfl-input>div>label {
+            width: 120px;
+        }
+        
+        .index_box ul {
+            width: 545px;
+            overflow: hidden;
+            margin: 10px auto;
+            padding: 0;
+        }
+        
+        .index_box li {
+            float: left;
+            width: 124px;
+            height: 120px;
+            margin: 5px;
+        }
+        
+        .index_box li>div.top_y {
+            width: 124px;
+            height: 88px;
+            background: #0cbdea;
+            border-radius: 3px 3px 0 0;
+            -webkit-border-radius: 3px 3px 0 0;
+            -ms-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            overflow: hidden
+        }
+        
+        .index_box li>div.top_y a {
+            width: 122px;
+            height: 86px;
+            line-height: 86px;
+            margin: 1px auto;
+            display: block;
+            color: #ffffff;
+            font-size: 18px;
+            text-align: center;
+            background: #0dbdea;
+            border: 1px solid #5ed3f1;
+            border-radius: 3px 3px 0 0;
+            -webkit-border-radius: 3px 3px 0 0;
+            -ms-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+        }
+        
+        .index_box li>div.top_e {
+            width: 124px;
+            height: 30px;
+            background: #08a4df;
+            border-radius: 0 0 3px 3px;
+            -webkit-border-radius: 0 0 3px 3px;
+            -ms-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+            overflow: hidden;
+        }
+        
+        .index_box li>div.top_e p {
+            width: 122px;
+            height: 29px;
+            line-height: 29px;
+            margin: 0 auto;
+            display: block;
+            color: #ffffff;
+            font-size: 12px;
+            text-align: center;
+            background: #0ba5df;
+            border: 1px solid #5ec4ea;
+            border-top: none;
+            border-radius: 0 0 3px 3px;
+            -webkit-border-radius: 0 0 3px 3px;
+            -ms-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+        }
+    </style>
+</head>
+
+<body style="background-color:#ffffff ">
+
+    <!-- <div class="index_box">
+        <ul>
+            <li>
+                <div class="top_y">
+                    <a href="#">电脑故障</a>
+                </div>
+                <div class="top_e">
+                    <p>一年使用了<span>21</span>次</p>
+                </div>
+            </li>
+            <li>
+                <div class="top_y">
+                    <a href="#">软件安装</a>
+                </div>
+                <div class="top_e">
+                    <p>一年使用了<span>12</span>次</p>
+                </div>
+            </li>
+            <li>
+                <div class="top_y">
+                    <a href="#">系统重装</a>
+                </div>
+                <div class="top_e">
+                    <p>一年使用了<span>12</span>次</p>
+                </div>
+            </li>
+            <li>
+                <div class="top_y">
+                    <a href="#">打印机故障</a>
+                </div>
+                <div class="top_e">
+                    <p>一年使用了<span>12</span>次</p>
+                </div>
+            </li>
+            <li>
+                <div class="top_y">
+                    <a href="#">耗材更换</a>
+                </div>
+                <div class="top_e">
+                    <p>一年使用了<span>21</span>次</p>
+                </div>
+            </li>
+            <li>
+                <div class="top_y">
+                    <a href="#">电话故障</a>
+                </div>
+                <div class="top_e">
+                    <p>一年使用了<span>12</span>次</p>
+                </div>
+            </li>
+            <li>
+                <div class="top_y">
+                    <a href="#">其他终端故障</a>
+                </div>
+                <div class="top_e">
+                    <p>一年使用了<span>12</span>次</p>
+                </div>
+            </li>
+        </ul>
+    </div> -->
+    <div class="modal-body">
+        <form style="margin:0 ;padding:0">
+            <div class="gdperchoice_left">
+                <h3>组织结构</h3>
+                <div class="zz_box"></div>
+            </div>
+            <div class="gdperchoice_right">
+                <div class="gdperchoice_right_search">
+                    <h3>搜&nbsp&nbsp索</h3>
+                    <input type="text" placeholder="姓名、部门、电话、手机" / maxlength="25">
+                    <button></button>
+                </div>
+                <div style="clear:both"></div>
+                <div class="gdperchoice_right_tb_box">
+                    <div class="gdperchoice_right_tb">
+                        <table>
+                            <thead>
+                                <th>姓名</th>
+                                <th>部门</th>
+                                <th>电话</th>
+                                <th>手机</th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>赵恒平</td>
+                                    <td>上海分/软件一部</td>
+                                    <td>9729</td>
+                                    <td>13219019010</td>
+                                    <td>
+                                        <a href="#">选择</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>严敏</td>
+                                    <td>上海分/软件一部</td>
+                                    <td>9729</td>
+                                    <td>13219019010</td>
+                                    <td>
+                                        <a href="#">选择</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>李仡</td>
+                                    <td>上海分/软件一部</td>
+                                    <td>9729</td>
+                                    <td>13219019010</td>
+                                    <td>
+                                        <a href="#">选择</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>徐璐</td>
+                                    <td>上海分/软件一部</td>
+                                    <td>9729</td>
+                                    <td>13219019010</td>
+                                    <td>
+                                        <a href="#">选择</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>滕树宝</td>
+                                    <td>上海分/软件一部</td>
+                                    <td>9729</td>
+                                    <td>13219019010</td>
+                                    <td>
+                                        <a href="#">选择</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>赵恒平</td>
+                                    <td>上海分/软件一部</td>
+                                    <td>9729</td>
+                                    <td>13219019010</td>
+                                    <td>
+                                        <a href="#">选择</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                        <div class="fenpage">
+                            <a class="before" href="#">
+                                <</a>
+                                    <ul>
+                                        <li><a class="active" href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">6</a></li>
+                                    </ul>
+                                    <a href="#" class="next">></a>
+
+                        </div>
+                    </div>
+                    <div class="xzry">
+                        <label for="">选中人员</label>
+                        <div>
+                            <p>金三胖</p>
+                            <a href="#">X</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--</div>    -->
+    <script src="js/jquery.1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.spinner.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="layer/layer.js"></script>
+    <script type="text/javascript">
+        $(".cancel").click(function() {
+            var index = parent.layer.getFrameIndex(window.name);
+            parent.layer.close(index);
+        });
+    </script>
+</body>
+
+</html>

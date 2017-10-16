@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>工程师首页</title>
+    <title>普通首页</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -332,103 +332,71 @@
         <div class="content row" style="margin-top:10px;">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 top_btn">
                 <a href="#" class="index_btn">发起服务</a>
-                <a href="#">签&nbsp&nbsp&nbsp到</a>
-                <a href="#" style="float:right;margin:0">配&nbsp&nbsp&nbsp置</a>
             </div>
             <div class="content-left col-lg-8 col-md-12 col-sm-12 col-xs-12">
                 <div class="request-title">
                     <img src="img/line-left.png" alt="no">
-                    <h3>我的任务</h3>
+                    <h3>我的请求</h3>
                     <img src="img/line-right.png" alt="no">
                 </div>
                 <div class="row ">
-                    <div class="content-left-left col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="list left-list-01 list_hh">
+                    <div class="content-left-left col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="list left-list-01 list_hh" style="min-height:650px;">
                             <div class="list-title title-01">
-                                <h3>待执行的任务(<span>5</span>)</h3>
+                                <h3>未完成的请求(<span>5</span>)</h3>
                                 <a href="#">更多</a>
                                 <img src="img/square-01.png" height="21" width="14" alt="" />
                             </div>
-                            <ul>
+                            <ul class="request_list">
                                 <li>
-                                    <a href="#">
-                                        <div class="">
-                                            <p><i>1.</i><span>TSK20170201001</span>
-                                                <h>2017-2-21</h>
-                                            </p>
-                                            <p>
-                                                <h>张三</h>&nbsp;
-                                                <h>办公室</h>&nbsp;
-                                                <h>13522222222</h>&nbsp;
-                                                <h>PC重装系统</h>
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal-info">执行</button>
+                                    <div>
+                                        <span>1.</span>
+                                        <label for="">PC重装系统</label>
+                                        <p>2017-08-01 8:00</p>
+                                    </div>
+                                    <dl>
+                                        <dd>
+                                            <div>
+                                                <label>负责人:</label>
+                                                <p>悟空</p>
+                                                <p>13700000000</p>
+                                            </div>
+                                            <div>
+                                                <label>处理人:</label>
+                                                <p>悟空</p>
+                                                <p>13700000000</p>
+                                            </div>
+                                        </dd>
+                                        <dt class="dqr">
+                                            <p>待确认评价</p>
+                                            <button>确认与评价</button>
+                                        </dt>
+                                    </dl>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <div class="">
-                                            <p><i>2.</i><span>TSK20170201001</span>
-                                                <h>2017-2-21</h>
-                                            </p>
-                                            <p>
-                                                <h>张三</h>&nbsp;
-                                                <h>办公室</h>&nbsp;
-                                                <h>13522222222</h>&nbsp;
-                                                <h>PC重装系统11111111111111111111111111111</h>
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal-info">执行</button>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="">
-                                            <p><i>3.</i><span>TSK20170201001</span>
-                                                <h>2017-2-21</h>
-                                            </p>
-                                            <p>
-                                                <h>张三</h>&nbsp;
-                                                <h>办公室</h>&nbsp;
-                                                <h>13522222222</h>&nbsp;
-                                                <h>PC重装系统</h>
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal-info">执行</button>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="">
-                                            <p><i>4.</i><span>TSK20170201001</span>
-                                                <h>2017-2-21</h>
-                                            </p>
-                                            <p>
-                                                <h>张三</h>&nbsp;
-                                                <h>办公室</h>&nbsp;
-                                                <h>13522222222</h>&nbsp;
-                                                <h>PC重装系统</h>
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal-info">执行</button>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="">
-                                            <p><i>5.</i><span>TSK20170201001</span>
-                                                <h>2017-2-21</h>
-                                            </p>
-                                            <p>
-                                                <h>张三</h>&nbsp;
-                                                <h>办公室</h>&nbsp;
-                                                <h>13522222222</h>&nbsp;
-                                                <h>PC重装系统</h>
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal-info">执行</button>
+                                    <div>
+                                        <span>2.</span>
+                                        <label for="">OA故障</label>
+                                        <p>2017-08-01 8:00</p>
+                                    </div>
+                                    <dl>
+                                        <dd>
+                                            <div>
+                                                <label>负责人:</label>
+                                                <p>悟空</p>
+                                                <p>13700000000</p>
+                                            </div>
+                                            <div>
+                                                <label>处理人:</label>
+                                                <p>悟空</p>
+                                                <p>13700000000</p>
+                                            </div>
+                                        </dd>
+                                        <dt>
+                                            <p>处理中</p>
+                                            <button>查看请求</button>
+                                        </dt>
+                                    </dl>
                                 </li>
                             </ul>
                             <div class="page page1">
@@ -494,290 +462,6 @@
 
                         </div>
                     </div>
-                    <div class="content-left-right col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        <div class="list left-list-02">
-                            <div class="list-title title-02">
-                                <h3>进行中的任务(<span>5</span>)</h3>
-                                <a href="#">更多</a>
-                                <img src="img/square-02.png" height="21" width="14" alt="" />
-                            </div>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <div class="">
-                                            <p><i>1.</i><span>TSK20170201001</span>
-                                                <h>2017-2-21</h>
-                                            </p>
-                                            <p>
-                                                <h>张三</h>&nbsp;
-                                                <h>办公室</h>&nbsp;
-                                                <h>13522222222</h>&nbsp;
-                                                <h>PC重装系统</h>
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal-success">完成</button>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="">
-                                            <p><i>2.</i><span>TSK20170201001</span>
-                                                <h>2017-2-21</h>
-                                            </p>
-                                            <p>
-                                                <h>张三</h>&nbsp;
-                                                <h>办公室</h>&nbsp;
-                                                <h>13522222222</h>&nbsp;
-                                                <h>PC重装系统</h>
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal-success">完成</button>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="">
-                                            <p><i>3.</i><span>TSK20170201001</span>
-                                                <h>2017-2-21</h>
-                                            </p>
-                                            <p>
-                                                <h>张三</h>&nbsp;
-                                                <h>办公室</h>&nbsp;
-                                                <h>13522222222</h>&nbsp;
-                                                <h>PC重装系统</h>
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal-success">完成</button>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="">
-                                            <p><i>4.</i><span>TSK20170201001</span>
-                                                <h>2017-2-21</h>
-                                            </p>
-                                            <p>
-                                                <h>张三</h>&nbsp;
-                                                <h>办公室</h>&nbsp;
-                                                <h>13522222222</h>&nbsp;
-                                                <h>PC重装系统</h>
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal-success">完成</button>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="">
-                                            <p><i>5.</i><span>TSK20170201001</span>
-                                                <h>2017-2-21</h>
-                                            </p>
-                                            <p>
-                                                <h>张三</h>&nbsp;
-                                                <h>办公室</h>&nbsp;
-                                                <h>13522222222</h>&nbsp;
-                                                <h>PC重装系统</h>
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <button class="btn btn-success" data-toggle="modal" data-target="#myModal-success">完成</button>
-                                </li>
-                            </ul>
-                            <div class="page page2">
-                                <ul class="pagination">
-                                    <li class="active">
-                                        <a href="#">首页</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">上一页</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">下一页</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">末页</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!--完成按钮弹窗-->
-                            <!-- 模态框（Modal） -->
-                            <div class="modal fade" id="myModal-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal-dialog success">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                               <img src="img/title_img.png" alt="no" />
-                                            </button>
-                                            <h4 class="modal-title" id="myModalLabel">
-                                                工单完成
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div>
-                                                <label for="">处理情况：</label>
-                                                <textarea name="" id="" rows="10"></textarea>
-                                            </div>
-                                            <div style=" height: 30px;">
-                                                <label for="">处理结果：</label>
-                                                <ul>
-                                                    <li class="active"><a href="javascript:;">解决</a></li>
-                                                    <li><a href="javascript:;">部分解决</a></li>
-                                                    <li><a href="javascript:;">未解决</a></li>
-                                                    <li><a href="javascript:;">无需解决</a></li>
-                                                </ul>
-
-                                            </div>
-                                            <div style="position: relative;">
-                                                <label for="" style="width: 110px;">实际用时：</label>
-                                                <div class="input-group spinner" data-trigger="spinner" id="spinner" style="width:90px;">
-                                                    <input type="text" class="form-control" value="1" data-max="24" data-min="0" data-step="1">
-                                                    <div class="input-group-addon">
-                                                        <a href="javascript:;" class="spin-up" data-spin="up"><img src="img/top.png" alt=""></a>
-                                                        <a href="javascript:;" class="spin-down" data-spin="down"><img src="img/bottom.png" alt=""></a>
-                                                    </div>
-
-                                                </div>
-                                                <span style=" position: absolute;top: 6px;left: 207px;font-size: 16px;font-weight: bold;">时</span>
-                                                <div class="input-group spinner" data-trigger="spinner" id="spinner2" style="width:90px;margin: -34px 0 0 246px;">
-                                                    <input type="text" class="form-control" value="1" data-max="60" data-min="0" data-step="1">
-                                                    <div class="input-group-addon">
-                                                        <a href="javascript:;" class="spin-up" data-spin="up"><img src="img/top.png" alt=""></a>
-                                                        <a href="javascript:;" class="spin-down" data-spin="down"><img src="img/bottom.png" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <span style=" position: absolute;top: 6px;right:100px;font-size: 16px;font-weight: bold;">分</span>
-                                            </div>
-
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary">
-                                               完成
-                                            </button>
-                                            <button type="button" class="btn btn-info" data-dismiss="modal">取消
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <!-- /.modal-content -->
-                                </div>
-                                <!-- /.modal -->
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="content-left-bottom ">
-                    <div class="list  list_hh2 left-list-03">
-                        <div class="list-title title-03">
-                            <h3>逾期未完成的任务(<span>5</span>)</h3>
-                            <a href="#">更多</a>
-                            <img src="img/square-03.png" height="27" width="14" alt="" />
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <p><i>1.</i><span>TSK20170201001</span>
-                                            <h>2017-2-21</h>
-                                        </p>
-                                        <p>
-                                            <h>张三</h>&nbsp;
-                                            <h>办公室</h>&nbsp;
-                                            <h>13522222222</h>&nbsp;
-                                            <h>PC重装系统</h>
-                                        </p>
-                                    </div>
-                                    <b class="hidden-xs">已逾期<h>2天5小时</h></b>
-                                </a>
-                                <button class="btn btn-danger" data-toggle="modal" data-target="#myModal-danger">添加跟踪信息</button>
-
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <p><i>2.</i><span>TSK20170201001</span>
-                                            <h>2017-2-21</h>
-                                        </p>
-                                        <p>
-                                            <h>张三</h>&nbsp;
-                                            <h>办公室</h>&nbsp;
-                                            <h>13522222222</h>&nbsp;
-                                            <h>PC重装系统</h>
-                                        </p>
-                                    </div>
-                                    <b class="hidden-xs">已逾期<h>2天5小时</h></b>
-                                </a>
-                                <button class="btn btn-danger" data-toggle="modal" data-target="#myModal-danger">添加跟踪信息</button>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div>
-                                        <p><i>3.</i><span>TSK20170201001</span>
-                                            <h>2017-2-21</h>
-                                        </p>
-                                        <p>
-                                            <h>张三</h>&nbsp;
-                                            <h>办公室</h>&nbsp;
-                                            <h>13522222222</h>&nbsp;
-                                            <h>PC重装系统</h>
-                                        </p>
-                                    </div>
-                                    <b class="hidden-xs">已逾期<h>2天5小时</h></b>
-                                </a>
-                                <button class="btn btn-danger" data-toggle="modal" data-target="#myModal-danger">添加跟踪信息</button>
-                            </li>
-                        </ul>
-                        <div class="page page3">
-                            <ul class="pagination">
-                                <li class="active">
-                                    <a href="#">首页</a>
-                                </li>
-                                <li>
-                                    <a href="#">上一页</a>
-                                </li>
-                                <li>
-                                    <a href="#">下一页</a>
-                                </li>
-                                <li>
-                                    <a href="#">末页</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- 模态框（Modal） -->
-                        <div class="modal fade" id="myModal-danger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog danger">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                               <img src="img/title_img.png" alt="no" />
-                                            </button>
-                                        <h4 class="modal-title" id="">
-                                            跟踪信息
-                                        </h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div>
-                                            <label for="">添加跟踪信息：</label>
-                                            <textarea name="" id="" rows="10" cols="53"></textarea>
-                                        </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary">
-                                               保存
-                                            </button>
-                                        <button type="button" class="btn btn-info">取消
-                                            </button>
-                                    </div>
-                                </div>
-                                <!-- /.modal-content -->
-                            </div>
-                            <!-- /.modal -->
-                        </div>
-
-                    </div>
-
                 </div>
             </div>
             <div class="content-right col-lg-4 col-md-12 col-sm-12 col-xs-12">

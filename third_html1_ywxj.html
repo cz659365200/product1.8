@@ -38,6 +38,23 @@
         .r-con-right .tab_box div.z3 table thead tr th {
             color: #f1624d;
         }
+        
+        #sjfl {
+            background: #00b5b1;
+            float: left;
+            width: 90px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #ffffff;
+            margin-left: 15px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border: none;
+        }
     </style>
 </head>
 
@@ -1340,8 +1357,11 @@
                                     </div>
                                     <div class="line6">
                                         <label for="">变更分类</label>
-                                        <input type="text" />
-                                        <input type="button" / value="选&nbsp&nbsp&nbsp择">
+                                        <div class="input-group sjfl_box" style="width:82%;">
+                                            <input type="text" maxlength="25" style="width:73%;" />
+                                            <a id="sjfl">选&nbsp&nbsp择</a>
+                                            <div id="xz_box" style="display: none;width:73%;"></div>
+                                        </div>
                                     </div>
                                     <div class="line5">
                                         <label for="">影响范围</label>
@@ -1446,8 +1466,8 @@
                     </div>
                 </div>
 
-                <div class="third_btn_box">
-                    <input type="button" class="save" value="保&nbsp&nbsp&nbsp存">
+                <div class="third_btn_box1">
+                    <!-- <input type="button" class="save" value="保&nbsp&nbsp&nbsp存"> -->
                     <input type="button" class="submit" value="提交变更">
                     <input type="button" class="cancel" value="取&nbsp&nbsp&nbsp消">
                 </div>

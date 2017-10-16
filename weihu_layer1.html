@@ -40,10 +40,27 @@
                         <input type="text" / value="2月3日领导参观视察活动">
                     </div>
                     <div>
+                        <label for="">通知范围</label>
+                        <div class="sel-box4">
+                            <select name="" id="sel4">
+                                <option value="1">全体人员</option>
+                                <option value="2">部分人员</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="height:auto">
                         <label for="">通知内容</label>
                         <textarea name="" id="" cols="30" rows="10">2月3日广东省政府领导莅临服务中心进行参观指导，请运维人员注意办公室卫生，当天着正装，体现良好的服务形象，特此通知。</textarea>
                     </div>
-
+                    <div>
+                        <label for="">短信通知</label>
+                        <ul>
+                            <li>
+                                <a class="cur" href="#"></a><label for="">发送</label></li>
+                            <li>
+                                <a href="#"></a><label for="">不发送</label></li>
+                        </ul>
+                    </div>
                 </div>
             </form>
         </div>
@@ -55,11 +72,21 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.spinner.min.js"></script>
     <script src="js/respond.min.js"></script>
+    <script src="js/selectpick.js"></script>
     <script src="layer/layer.js"></script>
     <script type="text/javascript">
         $(".cancel").click(function() {
             var index = parent.layer.getFrameIndex(window.name);
             parent.layer.close(index);
+        });
+        $("#sel4").selectpick({
+            container: '.sel-box4',
+            onSelect: function(value, text) {
+                //					 enAble();
+            }
+        });
+        $(".tjfl-input>div ul li a").click(function() {
+            $(this).addClass("cur").parent().siblings().find("a").removeClass("cur");
         });
     </script>
 </body>
